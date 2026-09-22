@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="状态：已停止"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="未登录"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="启动无感开门"
+            android:enabled="false"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvRssi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="触发信号阈值: -62 dBm"
+            android:textSize="13sp" />
+
+        <SeekBar
+            android:id="@+id/seekRssi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvCooldown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开锁冷却: 30 秒"
+            android:textSize="13sp" />
+
+        <SeekBar
+            android:id="@+id/seekCooldown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvLeave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="离开判定时间: 15 秒（出门后信号丢失多久才算离开，回来才开门）"
+            android:textSize="13sp" />
+
+        <SeekBar
+            android:id="@+id/seekLeave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出登录"
+            android:enabled="false"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用说明：&#10;1. 先登录获取门锁信息（用云莓智能的账号密码）&#10;2. 点「启动无感开门」，app 在后台持续扫描门锁蓝牙&#10;3. 只有出门后（信号丢失超过离开判定时间）再回来，走到门口才自动开门&#10;4. 在室内活动不会开门；冷却时间内不会重复触发&#10;5. 请保持蓝牙开启，并在系统设置中允许本app后台运行"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:lineSpacingMultiplier="1.3" />
+
+    </LinearLayout>
+</ScrollView>

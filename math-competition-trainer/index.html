@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="全国大学生数学竞赛非数学A类专项与真题训练，支持随机刷题、收藏和完成记录。">
+<meta name="theme-color" content="#12365b">
+<title>竞赛数学训练场 · 非数学A类</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312365b'/%3E%3Cpath d='M15 14h35v9H29l18 18v9H14v-9h22L18 23h-3z' fill='%23f0c85b'/%3E%3C/svg%3E">
+<!-- MathJax 配置：渲染行内与独立 LaTeX 公式 -->
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<style>
+:root{--navy:#12365b;--deep:#092744;--blue:#246692;--paper:#f3f6f9;--ink:#172638;--muted:#647487;--line:#d8e2eb;--gold:#efc65a;--green:#247b58;--white:#fff;--shadow:0 12px 32px rgba(25,51,76,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;color:var(--ink);background:var(--paper);font:16px/1.72 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}button,select{font:inherit}button{cursor:pointer}button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #77add4;outline-offset:2px}mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
+.app{min-height:100vh;display:grid;grid-template-columns:286px minmax(0,1fr)}.side{position:sticky;top:0;height:100vh;padding:28px 20px;color:#fff;background:linear-gradient(160deg,var(--deep),#15466f 70%,#1d5f8c)}.brand{display:flex;gap:12px;align-items:center;padding:0 8px 25px;border-bottom:1px solid #ffffff26}.logo{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;color:var(--gold);background:#ffffff1c;font:700 27px Georgia}.brand strong{display:block;font-size:18px}.brand small{display:block;color:#c9d9e7;font-size:13px}.nav{display:grid;gap:8px;margin-top:25px}.nav button{width:100%;min-height:48px;padding:12px 14px;border:0;border-radius:11px;text-align:left;color:#dce9f4;background:transparent}.nav button.active,.nav button:hover{color:#fff;background:#ffffff20}.badge{float:right;min-width:24px;padding:1px 7px;border-radius:99px;text-align:center;color:#173753;background:var(--gold);font-size:12px;font-weight:700}.side-note{position:absolute;bottom:24px;left:28px;right:28px;margin:0;color:#bed0df;font-size:13px}
+main{min-width:0;padding:34px clamp(24px,4vw,64px) 72px}.top,.view{max-width:1480px;margin-inline:auto}.top{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:28px}.eyebrow{margin:0 0 5px;color:var(--blue);font-size:13px;font-weight:700;letter-spacing:.08em}h1{margin:0;color:var(--navy);font:700 clamp(28px,3vw,40px)/1.25 Georgia,"STSong",serif}.progress{min-width:242px;padding:13px 16px;border:1px solid var(--line);border-radius:12px;background:#fff}.progress-label{display:flex;justify-content:space-between;color:var(--muted);font-size:14px}.progress-label strong{color:var(--navy)}.bar{height:7px;margin-top:9px;overflow:hidden;border-radius:99px;background:#e7edf3}.bar i{display:block;height:100%;width:0;border-radius:inherit;background:linear-gradient(90deg,var(--blue),#3d9972);transition:.2s}
+.view{display:none}.view.active{display:block}.panel{border:1px solid var(--line);border-radius:15px;background:#fff;box-shadow:var(--shadow)}.head{padding:24px 27px;border-bottom:1px solid var(--line)}.head h2{margin:0 0 5px;color:var(--navy);font-size:25px}.head p{margin:0;color:var(--muted)}.tabs{display:flex;gap:8px;padding:16px 22px;overflow-x:auto;border-bottom:1px solid var(--line)}.tabs button{flex:0 0 auto;min-height:40px;padding:7px 13px;border:1px solid var(--line);border-radius:99px;color:var(--navy);background:#fff}.tabs button.active{color:#fff;border-color:var(--blue);background:var(--blue)}.topics{display:flex;flex-wrap:wrap;gap:7px;padding:19px 24px 0}.chip{padding:4px 10px;border:1px solid #cfe0ec;border-radius:99px;color:#315d7d;background:#f4f9fc;font-size:13px}
+.theory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:20px 22px 24px}.theory article{min-width:0;padding:19px;border:1px solid var(--line);border-radius:12px;background:#fbfdff}.theory article:nth-child(2){border-top:3px solid var(--blue)}.theory article:nth-child(4){border-top:3px solid var(--gold)}.theory article:last-child{grid-column:1/-1;border-left:4px solid #b95656;background:#fffafa}.theory h3{margin:0 0 9px;color:var(--blue);font-size:16px}.theory ul{margin:0;padding-left:21px}.theory li+li{margin-top:7px}
+.section-title{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:31px 1px 14px}.section-title h2{margin:0;color:var(--navy);font-size:22px}.section-title span{color:var(--muted);font-size:14px}.qlist{display:grid;gap:14px}.question{padding:20px 22px;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px;background:#fff;box-shadow:0 5px 16px #1c374e09;transition:.2s}.question:hover{transform:translateY(-1px)}.question.completed{border-left-color:var(--green);background:#eff9f4}.qmeta{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:13px}.qtags{display:flex;flex-wrap:wrap;gap:7px}.tag,.source{padding:3px 8px;border-radius:99px}.tag{color:#704d0e;background:#fff4d4}.source{color:#2d5e7b;background:#eaf3f9}.qbody{margin:13px 0 17px;font-size:17px;line-height:1.82}.actions{display:flex;flex-wrap:wrap;gap:9px}.btn{min-height:42px;padding:9px 14px;border:1px solid var(--line);border-radius:9px;color:var(--navy);background:#fff;font-weight:600}.btn:hover{border-color:#9db7ca;background:#f7fafc}.btn.primary{color:#fff;border-color:var(--navy);background:var(--navy)}.btn.on-done{color:var(--green);border-color:#91c8ad;background:#f1fbf6}.btn.on-fav{color:#77540c;border-color:#e4c469;background:#fff9e8}.answer{display:none;margin-top:17px;padding:17px 18px;border:1px solid #d9e5ed;border-radius:10px;background:#f3f7fb}.answer.open{display:block}.answer p{margin:0}.answer p+p{margin-top:9px}.answer strong{color:var(--navy)}
+.notice{margin-bottom:17px;padding:13px 17px;border:1px solid #e7d59d;border-radius:10px;color:#6e561c;background:#fff9e7}.year{margin-bottom:13px;overflow:hidden;border:1px solid var(--line);border-radius:13px;background:#fff}.year summary{display:flex;align-items:center;justify-content:space-between;padding:19px 22px;color:var(--navy);cursor:pointer;list-style:none;font-weight:700}.year summary::-webkit-details-marker{display:none}.year summary:after{content:"＋";font-size:20px}.year[open] summary{border-bottom:1px solid var(--line)}.year[open] summary:after{content:"－"}.paper-body{padding:16px;background:#f8fafc}
+.random-controls{display:grid;grid-template-columns:minmax(220px,1fr) auto;gap:14px;align-items:end;padding:22px}.field label{display:block;margin-bottom:7px;color:var(--navy);font-weight:700}.field select{width:100%;min-height:46px;padding:9px 12px;border:1px solid var(--line);border-radius:9px;background:#fff}.stage{margin-top:18px}.empty{padding:42px 24px;border:1px dashed #b8c9d7;border-radius:13px;text-align:center;color:var(--muted);background:#ffffffaa}.empty strong{display:block;margin-bottom:5px;color:var(--navy);font-size:19px}.random-bar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:12px}.toast{position:fixed;right:26px;bottom:26px;z-index:99;padding:12px 17px;border-radius:10px;color:#fff;background:#092744ef;opacity:0;transform:translateY(12px);pointer-events:none;transition:.2s}.toast.show{opacity:1;transform:none}
+@media(min-width:1500px){.qlist.two{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}}@media(max-width:1024px){.app{grid-template-columns:240px minmax(0,1fr)}.side{padding:24px 15px}.theory{grid-template-columns:1fr}.theory article:last-child{grid-column:auto}}@media(max-width:820px){.app{grid-template-columns:1fr}.side{position:relative;height:auto;padding:17px 20px}.brand{padding:0 2px 15px}.nav{display:flex;margin-top:14px;overflow-x:auto}.nav button{flex:0 0 auto;width:auto;white-space:nowrap}.side-note{display:none}main{padding:25px 20px 58px}.top{align-items:flex-start}.progress{min-width:210px}.random-controls{grid-template-columns:1fr}}@media(max-width:620px){.top{display:block}.progress{margin-top:16px}.head{padding:20px}.theory{padding:16px}.question{padding:18px 16px}.random-bar{align-items:stretch;flex-direction:column}.toast{left:18px;right:18px;bottom:18px;text-align:center}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="side"><div class="brand"><div class="logo">Σ</div><div><strong>竞赛数学训练场</strong><small>非数学 A 类 · 冲奖版</small></div></div>
+<nav class="nav" aria-label="主导航"><button class="active" data-view="special">▦　知识点专项刷题</button><button data-view="papers">▤　历年真题专区</button><button data-view="random">↻　随机刷题</button><button data-view="favorites">☆　我的收藏 <span class="badge" id="favBadge">0</span></button></nav>
+<p class="side-note">完成与收藏记录仅保存在当前浏览器，跨设备不会自动同步，也不需要登录。</p></aside>
+<main>
+<header class="top"><div><p class="eyebrow">全国大学生数学竞赛 · 非数学 A 类</p><h1>把每个结论练到会用</h1></div><div class="progress"><div class="progress-label"><span>总完成进度</span><strong id="progressText">0 / 394</strong></div><div class="bar"><i id="progressBar"></i></div></div></header>
+<section class="view active" id="special"><div class="panel"><div class="head"><h2>知识点专项刷题</h2><p>九章横向切换；每章按定义、定理前提、公式、二级结论、易错点构建冲奖知识链。</p></div><div class="tabs" id="tabs"></div><div id="theory"></div></div><div class="section-title"><h2>本章专项训练</h2><span id="qCount"></span></div><div class="qlist two" id="specialList"></div></section>
+<section class="view" id="papers"><div class="section-title"><h2>历年真题专区</h2><span>按年份折叠 · 逐题查看解析</span></div><div class="notice">以下按公开回忆版常见题型整理与校订，适合限时训练；正式题面和评分口径请以赛事主办方材料为准。</div><div id="paperList"></div></section>
+<section class="view" id="random"><div class="panel"><div class="head"><h2>随机刷题</h2><p>每次开始生成无重复随机队列；可以抽全部专项、仅真题或指定章节。</p></div><div class="random-controls"><div class="field"><label for="scope">题库范围</label><select id="scope"></select></div><button class="btn primary" id="startRandom">开始随机出题</button></div></div><div class="stage" id="stage"><div class="empty"><strong>还没有开始</strong>选择范围后点击“开始随机出题”。</div></div></section>
+<section class="view" id="favorites"><div class="section-title"><h2>我的收藏</h2><span id="favSummary">共 0 题</span></div><div class="notice">收藏与完成记录仅保存在当前浏览器。清理浏览器数据后会消失，跨设备不会同步。</div><div class="qlist two" id="favList"></div></section>
+</main></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+'use strict';
+/* ==========================================================================
+   固定模板 A：章节知识数据
+   新增章节时复制 ch(...)；五个数组依次是定义、定理、公式、二级结论、易错点。
+   LaTeX 公式使用 \\(...\\)，反斜杠在 JavaScript 字符串中需要写成双反斜杠。
+   ========================================================================== */
+const ch=(id,short,title,intro,topics,definition,theorem,formula,advanced,pitfalls)=>({id,short,title,intro,topics,parts:[definition,theorem,formula,advanced,pitfalls]});
+const chapters=[
+ch('limit','函数极限','1. 函数、极限、连续','从无穷小比较到一致连续，建立竞赛分析的第一套语言。',['函数性质','数列极限','函数极限','无穷小比较','连续与间断','一致连续'],
+['极限：\\(\\forall\\varepsilon>0\\)，存在 \\(\\delta>0\\)，使 \\(0<|x-a|<\\delta\\Rightarrow|f(x)-A|<\\varepsilon\\)。','一致连续的 \\(\\delta\\) 只依赖 \\(\\varepsilon\\)，不依赖具体点。'],
+['夹逼定理前提：同一去心邻域内 \\(g\\le f\\le h\\)，且 \\(g,h\\to A\\)。','单调有界数列必收敛；闭区间连续函数必一致连续。'],
+['\\(\\sin x\\sim x,\\ 1-\\cos x\\sim x^2/2,\\ e^x-1\\sim x,\\ \\ln(1+x)\\sim x\\)。','\\((1+x)^\\alpha-1\\sim\\alpha x\\)，\\(\\lim_{n\\to\\infty}(1+x/n)^n=e^x\\)。'],
+['若 \\(|f^{\\prime}|\\le M\\)，则函数满足 Lipschitz 条件，因而一致连续。','高阶极限找首个非零 Taylor 项；幂指型极限先取对数。'],
+['等价无穷小通常只替换乘除因子，加减结构先通分或展开。','开区间连续不保证一致连续；趋于无穷不等于函数无界。']),
+ch('diff','一元微分','2. 一元函数微分学','导数、微分、中值定理、Taylor 公式、极值与凹凸性。',['导数与微分','高阶导数','中值定理','Taylor公式','极值最值','凹凸与拐点'],
+['\\(f^{\\prime}(x_0)=\\lim_{h\\to0}[f(x_0+h)-f(x_0)]/h\\)；一元函数可导与可微等价。','凸函数的弦在图像上方，切线在图像下方。'],
+['Rolle：\\(f\\in C[a,b]\\)、区间内可导且 \\(f(a)=f(b)\\)，才可推出某点 \\(f^{\\prime}=0\\)。','Taylor 的 Lagrange 余项要求连接展开点与目标点的区间上存在 \\(n+1\\) 阶导数。'],
+['\\((uv)^{(n)}=\\sum_{k=0}^n\\binom nk u^{(k)}v^{(n-k)}\\)。','\\(e^x=\\sum_{k=0}^n x^k/k!+R_n\\)，\\(\\ln(1+x)=x-x^2/2+x^3/3-\\cdots\\)。'],
+['唯一根：介值定理证存在，导数定号证唯一。','若 \\(f^{\\prime\\prime}\\ge0\\)，则 \\(f(y)\\ge f(x)+f^{\\prime}(x)(y-x)\\)。'],
+['驻点不一定是极值点，极值点也可能不可导。','拐点要求凹凸性改变，不能只看二阶导数为零。']),
+ch('int1','一元积分','3. 一元函数积分学','不定积分、定积分、变限积分、反常积分与积分不等式。',['换元积分','分部积分','定积分性质','变限积分','反常积分','积分不等式'],
+['Riemann 可积：任意积分和在分割细度趋零时有共同极限。','若 \\(f\\) 连续，\\(F(x)=\\int_a^x f(t)dt\\) 满足 \\(F^{\\prime}=f\\)。'],
+['Newton–Leibniz 通常以被积函数连续、原函数存在为前提。','带权积分中值定理要求权函数可积且不变号。'],
+['\\(\\int_a^bf(x)dx=\\int_a^bf(a+b-x)dx\\)。','\\((\\int fg)^2\\le\\int f^2\\int g^2\\)，\\(I_n=\\frac{n-1}{n}I_{n-2}\\)。'],
+['周期函数在任一完整周期上的积分相同。','凸函数满足 Hermite–Hadamard 积分不等式。'],
+['定积分换元要同步更换上下限。','变限积分求导要乘上下限导数并留意负号。']),
+ch('geo','空间几何','4. 向量代数与空间解析几何','向量运算、直线与平面、距离与夹角、曲面。',['点积叉积','混合积','直线与平面','夹角距离','切平面','二次曲面'],
+['\\(\\mathbf a\\cdot\\mathbf b=|a||b|\\cos\\theta\\)，叉积模是平行四边形面积。','混合积绝对值是平行六面体体积。'],
+['三向量共面当且仅当混合积为零。','曲面 \\(F=0\\) 在 \\(\\nabla F\\ne0\\) 的点以梯度为法向量。'],
+['点到平面距离 \\(d=|Ax_0+By_0+Cz_0+D|/\\sqrt{A^2+B^2+C^2}\\)。','异面直线距离用连接向量在两方向叉积上的投影。'],
+['平面夹角看法向量；直线与平面夹角是方向与法向夹角的余角。','二次曲面先配方平移，再按平方项符号分类。'],
+['叉积交换次序会变号。','夹角通常取锐角，点积公式常需绝对值。']),
+ch('md','多元微分','5. 多元函数微分学','多元极限、全微分、方向导数、复合与隐函数、极值。',['二重极限','偏导与全微分','方向导数','复合函数','隐函数','条件极值'],
+['可微：\\(\\Delta z=A\\Delta x+B\\Delta y+o(\\rho)\\)。可微蕴含连续和偏导存在。','方向导数按单位方向向量定义。'],
+['偏导在邻域存在且在该点连续，可推出该点可微。','隐函数定理需 \\(F\\in C^1\\) 且被解变量的偏导非零。'],
+['\\(D_{\\mathbf u}f=\\nabla f\\cdot\\mathbf u\\)，最大方向导数为 \\(|\\nabla f|\\)。','极值判别量 \\(D=f_{xx}f_{yy}-f_{xy}^2\\)。'],
+['否定二重极限常选不同路径；证明存在必须统一估计。','齐次函数满足 \\(xf_x+yf_y=kf\\)。'],
+['偏导存在不代表连续或可微。','Lagrange 乘子只给候选点，边界和非正则点另查。']),
+ch('mi','多元积分','6. 多元函数积分学','二重、三重、曲线与曲面积分，以及三大公式。',['二重积分','三重积分','曲线积分','曲面积分','Green公式','Gauss与Stokes'],
+['第二类曲线积分与定向有关；第二类曲面积分随法向反向而变号。','连续函数在有界闭区域上可积。'],
+['Green 要求边界分片光滑且正向，\\(P,Q\\in C^1\\)。','Gauss 要求闭曲面取外侧；Stokes 的边界与曲面取向满足右手规则。'],
+['极坐标 \\(dA=rdrd\\theta\\)，球坐标 \\(dV=\\rho^2\\sin\\varphi d\\rho d\\varphi d\\theta\\)。','参数曲面 \\(dS=|\\mathbf r_u\\times\\mathbf r_v|dudv\\)。'],
+['对称区域先判奇偶；轮换对称常把多个积分相加。','开曲面可补面后用 Gauss，再减补面通量。'],
+['换元必须乘 Jacobian 绝对值。','旋度为零推出保守场通常还需区域单连通。']),
+ch('series','无穷级数','7. 无穷级数','数项级数、幂级数、函数展开与 Fourier 级数。',['正项级数','任意项级数','绝对收敛','幂级数','函数展开','Fourier级数'],
+['级数收敛是部分和收敛；通项趋零仅是必要条件。','幂级数在收敛半径内绝对收敛，端点另判。'],
+['Leibniz 需 \\(b_n\\downarrow0\\)，余项不超过首个舍去项。','Dirichlet 定理在跳跃点收敛到左右极限平均。'],
+['\\(R^{-1}=\\limsup\\sqrt[n]{|a_n|}\\)。','\\((1-x)^{-1}=\\sum x^n\\)，\\(\\ln(1+x)=\\sum(-1)^{n-1}x^n/n\\)。'],
+['Abel 变换是离散分部积分。','幂级数在收敛区间内部可逐项求导积分。'],
+['比值判别极限为 1 时失效。','条件收敛级数不可任意重排；Fourier 跳点值不等于原赋值。']),
+ch('ode','微分方程','8. 常微分方程','一阶方程、可降阶方程、常系数线性方程与 Euler 方程。',['分离变量','一阶线性','Bernoulli','可降阶','常系数线性','Euler方程'],
+['线性非齐次通解等于一个特解加齐次通解。','通解中的独立常数个数通常等于方程阶数。'],
+['\\(f,f_y\\) 在初值点邻域连续可保证局部存在唯一。','常系数方程由特征根及其重数决定解型。'],
+['\\(y^{\\prime}+Py=Q\\) 的积分因子 \\(\\mu=e^{\\int Pdx}\\)。','Bernoulli 令 \\(z=y^{1-n}\\)；Euler 方程可试 \\(y=x^m\\)。'],
+['不显含 \\(y\\) 令 \\(p=y^{\\prime}\\)；不显含 \\(x\\) 令 \\(p(y)=y^{\\prime}\\)。','共振时试探特解乘足够次 \\(x\\)。'],
+['分离变量除以含 \\(y\\) 的因子可能丢常值解。','边值问题不同于初值问题，可能无解或多解。']),
+ch('la','线性代数','9. 线性代数','行列式、矩阵、向量组、方程组、特征值与二次型。',['行列式','矩阵','秩与向量组','方程组','特征值','二次型'],
+['秩等于最高阶非零子式阶数，也等于行空间与列空间维数。','特征向量必须非零；二次型可用实对称矩阵表示。'],
+['\\(Ax=0\\) 有非零解当且仅当 \\(r(A)<n\\)。','\\(Ax=b\\) 有解当且仅当 \\(r(A)=r(A|b)\\)；实对称矩阵可正交对角化。'],
+['\\(|AB|=|A||B|\\)，\\(r(AB)\\le\\min\\{r(A),r(B)\\}\\)。','实对称矩阵正定等价于全部顺序主子式为正。'],
+['Cayley–Hamilton 可用于矩阵降幂与求逆。','合同保持惯性指数，相似保持特征值。'],
+['\\(AB=0\\) 不推出某个因子为零。','初等行变换通常不保持特征值；重特征值未必有足够特征向量。'])
+];
+
+/* ========================================================================== 
+   固定模板 A-扩展：每章五栏依次追加“定义、定理、公式、二级结论、易错点”。
+   后续扩充时，只需在对应章节 id 下继续添加字符串即可。
+   ========================================================================== */
+const THEORY_PLUS={
+limit:[
+['数列极限用 \\(\\varepsilon-N\\) 语言；函数在无穷远处的极限用 \\(M-X\\) 语言。','无穷小阶：若 \\(\\alpha/\\beta\\to0\\)，称 \\(\\alpha=o(\\beta)\\)；若比值趋非零常数则为同阶。','间断点分为可去、跳跃、无穷和振荡间断点；左右极限决定分类。'],
+['Heine 定理：\\(\\lim_{x\\to a}f(x)=A\\) 当且仅当任意 \\(x_n\\to a,x_n\\ne a\\) 均有 \\(f(x_n)\\to A\\)。','Cauchy 收敛准则不预知极限值；单调有界定理只适用于实数完备性框架。','连续函数介值、零点、最值定理均要求闭区间；一致连续可由 Heine–Cantor 定理保证。'],
+['Stolz 定理可处理 \\(\\infty/\\infty\\) 型数列：需分母严格递增并趋于无穷。','常用展开：\\(\\tan x=x+x^3/3+o(x^3)\\)，\\(\\arctan x=x-x^3/3+o(x^3)\\)。','若 \\(u_n\\to0\\)，则 \\(\\ln(1+u_n)=u_n-u_n^2/2+O(u_n^3)\\)，适合幂指型极限。'],
+['递推数列常按“不动点—有界—单调—取极限”四步；必要时研究偶、奇子列。','压缩映射：若区间不变且 \\(|\\varphi^{\\prime}|\\le q<1\\)，迭代 \\(x_{n+1}=\\varphi(x_n)\\) 收敛到唯一不动点。','Cesàro：若 \\(a_n\\to A\\)，则算术平均 \\(n^{-1}\\sum_{k=1}^na_k\\to A\\)。'],
+['洛必达法则只适用于相应未定式且需满足导数比极限等条件，不能机械逐次求导。','分段函数在分界点连续必须同时检查左右极限和函数值。','将 \\(o(x^m)\\) 除以更高阶量可能放大误差；展开阶数必须覆盖分母首项。']],
+diff:[
+['微分是函数增量的线性主部：\\(\\Delta y=f^{\\prime}(x_0)\\Delta x+o(\\Delta x)\\)。','局部极值、全局最值、驻点和不可导点是四个不同概念。','凹凸性可由割线斜率单调、导数单调或二阶导数符号刻画。'],
+['Lagrange 中值定理要求闭区间连续、开区间可导；Cauchy 中值定理还要求两函数同具这些条件。','Darboux 定理：导数即使不连续也具有介值性。','Taylor 公式可用 Peano 余项要求展开点处相应阶可导；Lagrange 余项要求邻域内更高阶可导。'],
+['反函数导数：\\((f^{-1})^{\\prime}(y)=1/f^{\\prime}(x)\\)，前提是局部可逆且 \\(f^{\\prime}(x)\\ne0\\)。','参数方程：\\(dy/dx=(dy/dt)/(dx/dt)\\)，二阶导数还要再除以 \\(dx/dt\\)。','曲率 \\(\\kappa=|y^{\\prime\\prime}|/(1+y^{\\prime}^2)^{3/2}\\)；法线方向由单位切向量变化给出。'],
+['证明差值估计常构造辅助函数并用中值定理；证明零点个数常将 Rolle 定理反复降阶。','若 \\(f^{(n)}\\) 不变号，可控制 \\(f\\) 的零点数与有限差分符号。','凸函数满足 Jensen：\\(f(\\sum\\lambda_ix_i)\\le\\sum\\lambda_if(x_i)\\)，其中权重非负且和为 1。'],
+['可导只保证连续，不保证导函数连续。','二阶导数判别在 \\(f^{\\prime\\prime}(x_0)=0\\) 时失效，应看高阶首个非零导数或直接比较。','使用 Taylor 估计时必须说明余项及其适用区间。']],
+int1:[
+['原函数相差常数；不定积分是原函数族，定积分是数值。','反常积分必须先写成极限；多个瑕点应分别判断，不能让发散相互抵消。','变限积分的连续性、可导性取决于被积函数及上下限的正则性。'],
+['积分第一中值定理需连续函数与不变号可积权；第二中值定理通常需单调因子。','绝对可积蕴含反常积分收敛，反之不成立。','若 \\(f\\) 凸，则 \\(f((a+b)/2)\\le(b-a)^{-1}\\int_a^bf\\le[f(a)+f(b)]/2\\)。'],
+['Wallis：\\(I_n=\\int_0^{\\pi/2}\\sin^n xdx\\)，\\(I_n=(n-1)I_{n-2}/n\\)。','Beta–Gamma：\\(B(p,q)=\\int_0^1x^{p-1}(1-x)^{q-1}dx=\\Gamma(p)\\Gamma(q)/\\Gamma(p+q)\\)。','含参数积分 Leibniz 公式：端点项加上被积函数对参数偏导的积分。'],
+['对称性：若 \\(f(a+b-x)=f(x)\\)，可围绕中点配对；若二者之和为常数可直接求值。','积分不等式常用 Cauchy、Hölder、Minkowski、Jensen 与 Chebyshev。','有理函数积分先作真分式和部分分式；三角有理式可用万能代换。'],
+['\\(\\int_a^bf^{\\prime}=f(b)-f(a)\\) 需要足够正则性，不能只凭几乎处处存在导数。','含绝对值积分应先找变号点分段。','交换极限、求导、求和与积分必须核对一致收敛或支配条件。']],
+geo:[
+['直线可用点向式、两点式、参数式；平面可用点法式或一般式。','方向余弦平方和为 1；投影分为数量投影和向量投影。','柱面由与某坐标无关的方程表示；旋转曲面由母线绕轴旋转得到。'],
+['两平面平行当法向量成比例；重合还需常数项同一比例。','两直线共面当连接向量与两方向向量的混合积为零。','曲面正则点要求梯度不为零，曲线交线切向量可取两法向量叉积。'],
+['点到直线距离 \\(d=|\\overrightarrow{AP}\\times\\mathbf s|/|\\mathbf s|\\)。','平行平面距离 \\(d=|D_1-D_2|/\\sqrt{A^2+B^2+C^2}\\)（先统一法向系数）。','球面 \\((x-a)^2+(y-b)^2+(z-c)^2=R^2\\)，切平面法向量为半径方向。'],
+['最短距离问题可转化为投影或二次函数最小值。','二次曲面识别顺序：移项、配方、标准化、检查退化情形。','体积与有向体积分别为混合积绝对值与混合积本身。'],
+['直线夹角与方向向量夹角可能互补，通常取锐角。','平面一般式整体倍乘不改变平面，距离公式必须同尺度。','法向量为零向量不能定义平面；叉积为零表示方向平行而非一定重合。']],
+md:[
+['累次极限存在不推出二重极限存在；二重极限存在则沿任意路径极限相同。','全微分是增量的一阶线性主部，偏导仅描述坐标轴方向。','Hessian 是二阶偏导矩阵；在 \\(C^2\\) 条件下混合偏导可交换。'],
+['链式法则要求相应映射可微；仅有偏导存在通常不足。','隐函数组定理要求对被解变量的 Jacobian 行列式非零。','Lagrange 乘子法在约束梯度非零的正则点适用。'],
+['全微分 \\(df=f_xdx+f_ydy\\)；复合函数沿曲线导数为 \\(\\nabla f\\cdot\\mathbf r^{\\prime}(t)\\)。','二元极值：\\(D>0,f_{xx}>0\\) 为极小，\\(D>0,f_{xx}<0\\) 为极大，\\(D<0\\) 为鞍点。','二阶 Taylor：\\(f(a+h)=f(a)+\\nabla f\\cdot h+\\frac12h^THh+o(|h|^2)\\)。'],
+['齐次函数 Euler 公式可继续求导得到高阶恒等式。','条件极值也可消元降维；闭有界约束上需连同边界、端点比较。','方向导数对所有方向存在仍不一定可微。'],
+['梯度给出最速上升方向只在欧氏单位长度约束下成立。','Hessian 判别要求驻点且二阶可微；半正定情形判别失效。','隐函数求导后仍应检查原点附近确实能解出所需变量。']],
+mi:[
+['第一类曲线、曲面积分与方向无关；第二类积分带定向。','Jacobian 描述局部面积或体积伸缩，换元时取绝对值。','单连通区域中旋度为零的 \\(C^1\\) 向量场具有势函数。'],
+['Fubini 定理在连续函数或绝对可积条件下允许交换积分次序。','Green 公式的区域可分片光滑；有孔区域要包含所有边界且方向外正内负。','Gauss 适用于分片光滑闭曲面；Stokes 适用于与边界定向相容的定向曲面。'],
+['柱坐标 \\(dV=rdrd\\theta dz\\)；球坐标角度范围必须覆盖区域且避免重复。','Green：\\(\\oint Pdx+Qdy=\\iint(Q_x-P_y)dA\\)。','Gauss：\\(\\iint_{\\partial\\Omega}F\\cdot n\,dS=\\iiint_\\Omega\\operatorname{div}F\,dV\\)；Stokes：边界环流等于旋度通量。'],
+['质心、转动惯量均可视为带权积分；先用对称性消去奇函数项。','保守场线积分只与端点有关，势函数可逐项积分并校正常数函数。','曲面积分投影到坐标面时要用法向余弦或显函数面积元。'],
+['极坐标半径下限不一定为 0，必须按射线与区域交段确定。','Green/Gauss/Stokes 的符号错误多来自边界方向或法向选择。','奇点位于区域内时不能直接套用经典积分公式，应挖去小邻域。']],
+series:[
+['正项级数研究部分和有界性；任意项级数要区分绝对收敛与条件收敛。','函数项级数逐点收敛与一致收敛不同；一致收敛保证极限函数连续性的传递。','Fourier 系数由正交性得到；周期 \\(2l\\) 时基函数为 \\(\\cos(n\\pi x/l),\\sin(n\\pi x/l)\\)。'],
+['比较判别要求非负项；极限比较需比值趋有限正数。','积分判别要求 \\(f\\) 在尾区间非负、连续、单调下降；\\(\\sum1/(n\\ln n)\\) 发散而 \\(\\sum\\ln n/n^2\\) 收敛。','幂级数在任意闭子区间 \\(|x|\\le r<R\\) 一致收敛，可逐项积分和求导。'],
+['Stirling：\\(n!\\sim\\sqrt{2\\pi n}(n/e)^n\\)，故 \\(\\binom{2n}{n}\\sim4^n/\\sqrt{\\pi n}\\)。','常用不等式：\\(\\ln(1+x)\\le x\\)、\\(e^x\\ge1+x\\)、\\(\\sin x<x<\\tan x\\;(0<x<\\pi/2)\\)。','Fourier：\\(a_n=l^{-1}\\int_{-l}^lf(x)\\cos(n\\pi x/l)dx\\)，\\(b_n=l^{-1}\\int_{-l}^lf(x)\\sin(n\\pi x/l)dx\\)。'],
+['根值、比值判别优先处理含阶乘与指数项；边界情形再用比较、Leibniz、Dirichlet。','由已知幂级数求和时可乘 \\(x\\)、逐项微分、积分或解微分方程。','半区间展开：偶延拓得到余弦级数，奇延拓得到正弦级数。'],
+['\\(a_n\\to0\\) 不能推出级数收敛；调和级数是首要反例。','条件收敛乘积、重排与逐项运算必须谨慎；Cauchy 乘积需核对条件。','Fourier 级数在跳点收敛到左右极限平均，不一定等于原函数定义值。']],
+ode:[
+['方程阶数是最高阶导数阶数；线性方程中未知函数及其导数只以一次出现。','初值条件通常在一点给出，边值条件在不同点给出。','奇解可能不包含在通解常数选择中，常来自除法或包络。'],
+['一阶线性方程积分因子法要求系数在所研究区间连续。','Picard–Lindelöf 唯一性可由右端对 \\(y\\) 局部 Lipschitz 保证。','非齐次线性方程叠加原理仅对特解与齐次解成立。'],
+['二阶常系数：实异根、重根、共轭复根分别对应指数、指数乘多项式、指数乘正余弦。','Euler 方程令 \\(x=e^t\\) 可化为常系数方程。','常数变易：基本解矩阵的逆乘右端后积分。'],
+['恰当方程满足 \\(M_y=N_x\\)；不恰当时可寻找只依赖 \\(x\\) 或 \\(y\\) 的积分因子。','自治方程可在相线上判稳定性；平衡点需单独保留。','线性方程解空间维数等于阶数，Wronskian 可判基本解组。'],
+['求解后要代回并核对定义域，尤其含对数、分母、平方根时。','待定系数法只适用于特定常系数线性方程右端。','特征根重复度与右端共振次数共同决定试探式需乘的 \\(x\\) 次数。']],
+la:[
+['向量组线性相关等价于存在不全为零的线性组合为零。','矩阵相似表示同一线性变换在不同基下的矩阵；合同对应二次型换基。','代数重数是特征多项式重数，几何重数是特征子空间维数。'],
+['矩阵可逆等价于行列式非零、满秩、零空间平凡、0 不是特征值。','实对称矩阵不同特征值的特征向量正交，必可正交对角化。','Schur 补判别正定需主块可逆并满足相应正定条件。'],
+['伴随矩阵满足 \\(A\\operatorname{adj}A=|A|I\\)；可逆时 \\(A^{-1}=\\operatorname{adj}A/|A|\\)。','迹等于特征值之和，行列式等于特征值之积（按代数重数）。','二次型配方法等价于合同变换；规范形系数为 \\(1,-1,0\\)。'],
+['低秩更新可用矩阵行列式引理：\\(\\det(A+uv^T)=\\det A(1+v^TA^{-1}u)\\)。','幂等矩阵特征值只可能为 0、1，且可对角化；幂零矩阵特征值全为 0。','循环与高次矩阵多项式可先用最小多项式或 Cayley–Hamilton 降幂。'],
+['\\(r(A+B)\\) 一般不等于 \\(r(A)+r(B)\\)。','可对角化要求各特征空间维数之和为 \\(n\\)，有 \\(n\\) 个特征值并非都互异。','正定性是二次型性质；非对称矩阵应先取对称部分。']]
+};
+chapters.forEach(c=>c.parts.forEach((part,i)=>part.push(...THEORY_PLUS[c.id][i])));
+
+/* 新增资料包的知识补充：由极限、微分、积分、ODE 与多元积分讲义整理。 */
+const MATERIAL_THEORY={
+limit:[
+['用极限定义的函数与用变限积分定义的函数，是竞赛中常见的“非初等表达”。'],
+['几何平均/代数平均极限定理可处理乘积根式；Stolz 定理的离散差商结构对应 L’Hospital 思想。'],
+['Faulhaber：\\(\\sum_{k=1}^nk^p\\) 是关于 \\(n\\) 的 \\(p+1\\) 次多项式，首项为 \\(n^{p+1}/(p+1)\\)。'],
+['数列极限方法库：定义、夹逼、Stolz、递推不动点、Riemann 和、级数、定积分与渐近展开。'],
+['根式与阶乘同时出现时先分别取渐近主项，不能把等价无穷小直接用于差式。']],
+diff:[
+['弧微分 \\(ds=\\sqrt{1+y^{\\prime}^2}\,dx\\)；曲率半径 \\(R=1/\\kappa\\)。'],
+['斜渐近线 \\(y=ax+b\\) 的充分求法：\\(a=\\lim f(x)/x\\)，\\(b=\\lim[f(x)-ax]\\)，两极限均为有限数。'],
+['参数曲线曲率 \\(\\kappa=|x^{\\prime} y^{\\prime\\prime}-y^{\\prime} x^{\\prime\\prime}|/(x^{\\prime}^2+y^{\\prime}^2)^{3/2}\\)。'],
+['中值定理证明六类题：极限、等式、不等式、零点、介值存在性、单调有界性。'],
+['高阶导数优先考虑 Leibniz、幂级数系数、递推关系或复指数法，避免盲目逐阶求导。']],
+int1:[
+['定积分应用包括面积、弧长、旋转体体积与侧面积，以及功、引力、压力、平均值。'],
+['含取整函数的积分应按整数区间和断点分段。'],
+['万能代换 \\(t=\\tan(x/2)\\)：\\(\\sin x=2t/(1+t^2),\\cos x=(1-t^2)/(1+t^2),dx=2dt/(1+t^2)\\)。'],
+['循环积分可由分部积分建立线性方程；倒代换 \\(x=1/t\\) 常与原反常积分配对。'],
+['换元前后原函数形式可能相差常数；反常积分必须逐端点取极限。']],
+ode:[
+['准齐次方程可先求两条线性式的交点，再平移坐标化为齐次方程。'],
+['全微分方程 \\(Mdx+Ndy=0\\) 满足 \\(M_y=N_x\\)，解为势函数 \\(F(x,y)=C\\)。'],
+['不显含 \\(x\\) 的高阶方程令 \\(p(y)=y^{\\prime}\\)，则 \\(y^{\\prime\\prime}=p\,dp/dy\\)。'],
+['Volterra 型积分方程可通过换元整理卷积项，再逐次求导化为微分方程。'],
+['准齐次变换、Bernoulli 变换等过程中发生除法时，要补查被除因子为零的特解。']],
+mi:[
+['含参量常义积分的连续、可微与可积性依赖一致控制；变上下限求导还要加端点项。'],
+['正交变换保持长度、角度、球域与 Jacobian 绝对值 1，适合把线性式或二次型化为单一坐标。'],
+['广义极坐标 \\(x=ar\\cos\\theta,y=br\\sin\\theta\\) 的 Jacobian 为 \\(abr\\)。'],
+['多元积分还包括质心、转动惯量、引力、多元反常积分及第一 Green 公式等竞赛拓展。'],
+['参数域随参数变化时，直接套固定区域求导公式会漏掉移动边界贡献。']]
+};
+Object.entries(MATERIAL_THEORY).forEach(([id,parts])=>{const c=chapters.find(x=>x.id===id);parts.forEach((items,i)=>c.parts[i].push(...items))});
+
+/* ==========================================================================
+   固定模板 B：专项题
+   复制 q(id,章节id,题型,难度1-5,题干,答案,解析) 即可新增；id 必须唯一。
+   ========================================================================== */
+const q=(id,ch,t,l,b,a,s)=>({id,ch,t,l,b,a,s,source:(chapters.find(x=>x.id===ch)||{}).title||'专项'});
+const questions=[
+q('l1','limit','高阶极限',4,'求 \\(\\lim_{x\\to0}\\frac{\\ln(1+\\sin x)-\\sin(\\ln(1+x))}{x^3}\\)。','\\(\\frac12\\)。','展开到三阶：前者为 \\(x-x^2/2+x^3/6+o(x^3)\\)，后者为 \\(x-x^2/2-x^3/3+o(x^3)\\)。'),
+q('l2','limit','一致连续',4,'证明 \\(x\\sin(1/x)\\) 在 \\((0,+\\infty)\\) 一致连续。','一致连续。','在 \\((0,1]\\) 补定义 \\(f(0)=0\\)，用闭区间连续；在 \\([1,\\infty)\\) 有 \\(|f^{\\prime}|\\le2\\)，故 Lipschitz。'),
+q('l3','limit','递推数列',4,'\\(x_1>0,\\ x_{n+1}=\\frac12(x_n+2/x_n)\\)，证明收敛并求极限。','\\(\\sqrt2\\)。','均值不等式给 \\(x_{n+1}\\ge\\sqrt2\\)；从第二项起单调递减且有下界。'),
+q('d1','diff','中值定理',5,'设 \\(f\\in C^2[0,1],f(0)=f(1)=0\\)。证明某 \\(\\xi\\) 满足 \\(|f^{\\prime\\prime}(\\xi)|\\ge8|f(1/2)|\\)。','结论成立。','对节点 \\(0,1/2,1\\) 使用二次插值余项，端点线性插值为零。'),
+q('d2','diff','参数最值',4,'求 \\(x^x(x>0)\\) 的最小值，并讨论 \\(x^x=a\\) 的正根个数。','最小值 \\(e^{-1/e}\\)，在 \\(x=e^{-1}\\) 取得。','研究 \\(x\\ln x\\) 的单调性；介于最小值与 1 时有两根。'),
+q('d3','diff','高阶导数',5,'求 \\(x^{n-1}\\ln x\\) 的 \\(n\\) 阶导数。','\\((n-1)!/x\\)。','用 Leibniz 公式，或对 \\(x^\\alpha\\) 关于参数求导后令 \\(\\alpha=n-1\\)。'),
+q('i1','int1','对称积分',4,'计算 \\(\\int_0^{\\pi/2}\\frac{\\sin x}{\\sin x+\\cos x}dx\\)。','\\(\\pi/4\\)。','令 \\(x\\mapsto\\pi/2-x\\)，与原式相加后被积函数为 1。'),
+q('i2','int1','积分不等式',5,'\\(f\\in C[0,1],f>0\\)。证明 \\(\\int_0^1f\\cdot\\int_0^1\\frac1f\\ge1\\)。','由 Cauchy 不等式；等号当且仅当 \\(f\\) 为正常数。','取 \\(u=\\sqrt f,v=1/\\sqrt f\\)。'),
+q('i3','int1','反常积分',5,'讨论 \\(\\int_1^\\infty \\sin x/x^p\\,dx\\) 的收敛与绝对收敛。','\\(p>0\\) 收敛，\\(p>1\\) 绝对收敛。','普通收敛用 Dirichlet；绝对收敛与 p 级积分比较。'),
+q('g1','geo','异面直线',4,'求 \\(r=(1,0,0)+t(1,1,0)\\) 与 \\(r=(0,1,1)+s(0,1,1)\\) 的距离。','\\(1/\\sqrt3\\)。','用两方向向量叉积，再取连接向量在该叉积上的投影绝对值。'),
+q('g2','geo','切平面',3,'求 \\(x^2+y^2-z^2=1\\) 在 \\((\\sqrt2,0,1)\\) 的切平面。','\\(\\sqrt2x-z=1\\)。','梯度为 \\((2\\sqrt2,0,-2)\\)，代入点法式。'),
+q('g3','geo','二次曲面',4,'识别 \\(x^2+4y^2-z^2-2x+8y+4z=4\\) 的中心与类型。','中心 \\((1,-1,2)\\)，单叶双曲面。','配方得 \\((x-1)^2+4(y+1)^2-(z-2)^2=5\\)。'),
+q('m1','md','可微性',5,'\\(f=\\frac{x^2y}{x^4+y^2}\\) 在原点补 0，讨论连续性。','不连续。','沿直线趋近为 0，但沿 \\(y=x^2\\) 恒为 \\(1/2\\)。'),
+q('m2','md','条件极值',4,'在 \\(x^2+y^2+z^2=1\\) 下求 \\(xy+yz+zx\\) 的最大最小值。','最大 1，最小 \\(-1/2\\)。','利用 \\(xy+yz+zx=[(x+y+z)^2-1]/2\\)，再用 Cauchy。'),
+q('m3','md','隐函数',4,'由 \\(x^2+xy+y^2=3\\) 求点 \\((1,1)\\) 处 \\(y^{\\prime},y^{\\prime\\prime}\\)。','\\(y^{\\prime}=-1,y^{\\prime\\prime}=-2/3\\)。','连续两次隐式求导并代入。'),
+q('v1','mi','二重换元',4,'计算 \\(\\iint_D(x+y)^2dxdy\\)，\\(D:|x+y|\\le1,|x-y|\\le1\\)。','\\(2/3\\)。','令 \\(u=x+y,v=x-y\\)，Jacobian 绝对值为 \\(1/2\\)。'),
+q('v2','mi','Green公式',4,'\\(L\\) 为椭圆 \\(x^2/a^2+y^2/b^2=1\\) 正向边界，求 \\(\\oint_L(-y dx+xdy)\\)。','\\(2\\pi ab\\)。','Green 公式把积分化为区域上常数 2 的二重积分。'),
+q('v3','mi','Gauss通量',4,'求 \\(F=(x^3,y^3,z^3)\\) 通过单位球面外侧的通量。','\\(12\\pi/5\\)。','散度为 \\(3r^2\\)，球坐标积分得 \\(3\\cdot4\\pi\\int_0^1r^4dr\\)。'),
+q('s1','series','参数判敛',5,'讨论 \\(\\sum_{n=2}^\\infty\\frac{(-1)^n}{n^p\\ln n}\\)。','\\(p\\ge0\\) 收敛；\\(p>1\\) 绝对收敛；\\(p<0\\) 发散。','交错部分用 Leibniz，绝对值用积分判别。'),
+q('s2','series','幂级数求和',4,'求 \\(\\sum_{n=1}^\\infty\\frac{nx^n}{n+1}\\) 的和函数与收敛区间。','\\(\\frac1{1-x}+\\frac{\\ln(1-x)}x\\)，\\(|x|<1\\)，端点均发散。','拆成 \\(1-1/(n+1)\\)，使用几何级数和对数级数。'),
+q('s3','series','级数估计',5,'证明 \\(\\sum_{n=1}^\\infty1/n^2<2\\)。','成立。','对 \\(n\\ge2\\)，\\(1/n^2<1/[n(n-1)]\\)，再望远镜求和。'),
+q('o1','ode','一阶线性',3,'求解 \\(y^{\\prime}-2xy=xe^{x^2}\\)。','\\(y=e^{x^2}(x^2/2+C)\\)。','积分因子为 \\(e^{-x^2}\\)，于是 \\((ye^{-x^2})^{\\prime}=x\\)。'),
+q('o2','ode','Bernoulli',4,'求 \\(y^{\\prime}+y=xy^2\\)，并指出可能丢失的解。','\\(y=1/(x+1+Ce^x)\\)，另有 \\(y\\equiv0\\)。','令 \\(z=1/y\\) 化为线性方程；变换前除以 \\(y\\)，故补零解。'),
+q('o3','ode','共振',4,'求 \\(y^{\\prime\\prime}-2y^{\\prime}+y=e^x\\) 的通解。','\\(y=e^x(C_1+C_2x+x^2/2)\\)。','特征根 1 为二重根，右端共振，特解试 \\(Ax^2e^x\\)。'),
+q('a1','la','参数方程组',4,'讨论 \\(x+y+z=1,x+ay+z=2,x+y+az=3\\) 的解。','\\(a\\ne1\\) 唯一解；\\(a=1\\) 无解。','系数行列式为 \\((a-1)^2\\)；\\(a=1\\) 时左端相同而右端矛盾。'),
+q('a2','la','秩不等式',5,'证明 \\(r(A)+r(B)-n\\le r(AB)\\)，其中 \\(A\\) 为 \\(m\\times n\\)，\\(B\\) 为 \\(n\\times p\\)。','Sylvester 秩不等式。','\\(\\dim A(\\operatorname{Im}B)\\ge r(B)-\\dim\\ker A\\)。'),
+q('a3','la','二次型',5,'判断 \\(x_1^2+2x_2^2+3x_3^2+2x_1x_2-2x_2x_3\\) 的正定性。','正定。','对称矩阵顺序主子式为 1、1、2，均为正。')
+];
+
+/* ========================================================================== 
+   固定模板 B-资料原题：来自用户提供的 PDF 讲义和“每日一练”图片。
+   sourceQ 的最后一个参数会显示在题目卡片上，便于回溯资料来源。
+   ========================================================================== */
+function sourceQ(id,ch,t,l,b,a,s,source){const item=q(id,ch,t,l,b,a,s);item.source=source;questions.push(item)}
+sourceQ('doc-series-01','series','正项级数必要条件',3,'判断级数 \\(\\sum_{n=1}^{\\infty}(1/(n^2+2))^{1/n}\\) 的敛散性。','发散。','通项 \\(a_n=\\exp[-\\ln(n^2+2)/n]\\to1\\ne0\\)，不满足级数收敛的必要条件。','资料原题 · 每日一练 8.24');
+sourceQ('doc-series-02','series','绝对收敛比较',5,'已知 \\(a_n<b_n\\)，且 \\(\\sum a_n,\\sum b_n\\) 都收敛。“\\(\\sum a_n\\) 绝对收敛”是“\\(\\sum b_n\\) 绝对收敛”的什么条件？','充分且必要。','\\(b_n-a_n>0\\) 且其级数收敛，故绝对收敛。再由 \\(|b_n|\\le|a_n|+|b_n-a_n|\\) 及反向同理，二者绝对收敛等价。','资料原题 · 每日一练 8.25');
+sourceQ('doc-series-03','series','指数型幂级数',4,'已知 \\(\\sum_{n=0}^{\\infty}x^n/n!=e^x\\)，求 \\(\\sum_{n=0}^{\\infty}(n^2+1)x^n/(2^nn!)\\)。','\\((x^2/4+x/2+1)e^{x/2}\\)。','令 \\(t=x/2\\)。利用 \\(\\sum nt^n/n!=te^t\\)、\\(\\sum n(n-1)t^n/n!=t^2e^t\\)，再写 \\(n^2=n(n-1)+n\\)。','资料原题 · 每日一练 8.26');
+sourceQ('doc-series-04','series','逐项积分求和',4,'利用 \\(1/(1+x^2)\\) 的幂级数展开求 \\(\\sum_{n=0}^{\\infty}(-1)^n/(2n+1)\\)。','\\(\\pi/4\\)。','在 \\([0,r]\\;(r<1)\\) 上逐项积分几何级数，得 \\(\\arctan r=\\sum(-1)^nr^{2n+1}/(2n+1)\\)，再令 \\(r\\to1^-\\)。','资料原题 · 每日一练 8.27');
+sourceQ('doc-series-05','series','Fourier 余弦级数',5,'将 \\(f(x)=x+1\\) 在 \\([0,\\pi]\\) 展成余弦级数，并求 \\(\\lim_{n\\to\\infty}n^2\\sin a_{2n-1}\\)。','\\(-1/\\pi\\)。','余弦系数 \\(a_m=2[(-1)^m-1]/(\\pi m^2)\\)，故 \\(a_{2n-1}=-4/[\\pi(2n-1)^2]\\)。用 \\(\\sin u\\sim u\\) 得极限。','资料原题 · 每日一练 8.28');
+sourceQ('doc-series-06','series','Fourier 与级数求和',5,'由 \\(x^2\\) 的 Fourier 级数证明 \\(\\sum_{n=1}^{\\infty}1/n^2=\\pi^2/6\\)，并求 \\(\\sum_{n=1}^{\\infty}1/[n^2(n+1)^2]\\)。','\\(\\pi^2/3-3\\)。','先由 \\(x^2=\\pi^2/3+4\\sum(-1)^n\\cos(nx)/n^2\\) 取 \\(x=\\pi\\) 得 Basel 和；再分解 \\(1/[n^2(n+1)^2]=1/n^2+1/(n+1)^2-2/[n(n+1)]\\)。','资料原题 · 每日一练 8.29');
+sourceQ('doc-series-07','series','生成函数递推',5,'设 \\(a_0=1\\)，且 \\(na_n=a_{n-1}+1/n!\\;(n\\ge1)\\)。求生成函数 \\(y=\\sum_{n=0}^{\\infty}a_nx^n\\) 及 \\(a_n\\)。','\\(y=e^x[1+\\int_0^x(1-e^{-t})/t\,dt]\\)，\\(a_n=(1/n!)\\sum_{k=0}^n1/k!\\)。','递推式求和得 \\(y^{\\prime}=y+(e^x-1)/x,y(0)=1\\)。用积分因子求解，再比较系数。','资料原题 · 每日一练 8.30');
+sourceQ('doc-pdf-01','series','正项与子列',4,'判断 \\(\\sum_{n=1}^{\\infty}[1+(-1)^n]\\sin(1/n)/n\\) 的敛散性。','收敛。','奇数项为零，偶数项为 \\(2\\sin(1/n)/n\\sim2/n^2\\)，故由比较判别收敛。','资料原题 · 暑期讲义第8章');
+sourceQ('doc-pdf-02','series','参数级数',5,'设 \\(p>0\\)，讨论 \\(\\sum_{n=2}^{\\infty}(-1)^n/(n^p\\ln n)\\) 的收敛性。','总是收敛；\\(p>1\\) 时绝对收敛，\\(0<p\\le1\\) 时条件收敛。','原级数由 Leibniz 判别收敛；绝对值级数用积分判别，与 \\(1/(n^p\\ln n)\\) 比较。','资料原题 · 暑期讲义第8章');
+sourceQ('doc-pdf-03','series','渐近展开判敛',5,'固定实数 \\(k\\)，讨论 \\(\\sum_{n=1}^{\\infty}\\sin(\\pi\\sqrt{n^2+k^2})\\) 的敛散性。','\\(k=0\\) 时为零级数；\\(k\\ne0\\) 时条件收敛。','\\(\\sqrt{n^2+k^2}=n+k^2/(2n)+O(n^{-3})\\)，故通项为 \\((-1)^n\\pi k^2/(2n)+O(n^{-3})\\)，主部为交错调和型。','资料原题 · 暑期讲义第8章');
+sourceQ('doc-pdf-04','series','幂级数边界',5,'若 \\(\\sum a_n\\) 条件收敛，判断 \\(\\sum_{n=1}^{\\infty}na_n(x-1)^n\\) 在 \\(x=\\sqrt3\\) 与 \\(x=3\\) 处的敛散性。','\\(x=\\sqrt3\\) 收敛，\\(x=3\\) 发散。','由条件收敛知原幂级数半径为 1；乘 \\(n\\) 不改变半径。\\(|\\sqrt3-1|<1\\)，而 \\(|3-1|>1\\)。','资料原题 · 暑期讲义第8章');
+sourceQ('doc-pdf-05','series','递推与幂级数',5,'设 \\(a_1=1,(n+1)a_{n+1}=(n+1/2)a_n\\)。证明 \\(\\sum_{n=1}^{\\infty}a_nx^n\\) 在 \\(|x|<1\\) 收敛并求和。','\\(2[(1-x)^{-1/2}-1]\\)。','递推得 \\(a_n=2\\binom{2n}{n}/4^n\\)，代入 \\((1-x)^{-1/2}=\\sum\\binom{2n}{n}x^n/4^n\\)。','资料原题 · 暑期讲义第8章');
+sourceQ('doc-pdf-06','series','Taylor 展开',4,'将 \\(f(x)=(x-2)e^{-x}\\) 展成 \\(x-1\\) 的幂级数，并求 \\(f^{(n)}(1)\\)。','\\(f(1)=-e^{-1}\\)；\\(n\\ge1\\) 时 \\(f^{(n)}(1)=e^{-1}(-1)^{n-1}(n+1)\\)。','令 \\(h=x-1\\)，则 \\(f=e^{-1}(h-1)e^{-h}\\)，展开并比较 \\(h^n\\) 系数。','资料原题 · 暑期讲义第8章');
+sourceQ('doc-pdf-07','series','系数运算',5,'若 \\(\\sum_{n=0}^{\\infty}a_nx^n=\\ln(2+x)\\)，求 \\(\\sum_{n=0}^{\\infty}na_{2n}\\)。','\\(-1/6\\)。','取偶部 \\(E(x)=[f(x)+f(-x)]/2=\\frac12\\ln(4-x^2)\\)，对 \\(E\\) 求导并在 \\(x=1\\) 代入。','资料原题 · 暑期讲义第8章');
+sourceQ('doc-pdf-08','series','Stirling 极限',5,'求 \\(\\lim_{n\\to\\infty}n^{-1}\\ln[(2n)!/(n!n^n)]\\)。','\\(2\\ln2-1\\)。','用 \\(\\ln n!=n\\ln n-n+O(\\ln n)\\) 分别展开后除以 \\(n\\)。','资料原题 · 暑期讲义第8章');
+sourceQ('doc-pdf-09','series','Riemann 和',4,'求 \\(\\lim_{n\\to\\infty}\\sum_{k=1}^n n/(n^2+k^2)\\)。','\\(\\pi/4\\)。','改写为 \\(n^{-1}\\sum_{k=1}^n[1+(k/n)^2]^{-1}\\)，是 \\(\\int_0^1dx/(1+x^2)\\) 的 Riemann 和。','资料原题 · 暑期讲义第8章');
+sourceQ('doc-pdf-10','series','交换求和与积分',5,'用几何级数证明 \\(\\int_0^1\\ln x/(1-x)\,dx=-\\pi^2/6\\)。','\\(-\\pi^2/6\\)。','对 \\(0\\le x<1\\)，\\(1/(1-x)=\\sum_{n=0}^{\\infty}x^n\\)。逐项积分并用单调/支配收敛，且 \\(\\int_0^1x^n\\ln xdx=-1/(n+1)^2\\)。','资料原题 · 暑期讲义第8章');
+
+/* ========================================================================== 
+   固定模板 B-参数化竞赛题库：每章 7 个题型 × 4 组参数，共 252 道。
+   这些题均给出答案和核心推导；改动 k 的范围即可成批增减题量。
+   ========================================================================== */
+function generatedQ(id,ch,t,l,b,a,s){const item=q(id,ch,t,l,b,a,s);item.source='竞赛参数化强化题';questions.push(item)}
+for(let k=1;k<=4;k++){
+  generatedQ(`gen-limit-${k}-1`,'limit','基本极限',3,`求 \\(\\lim_{x\\to0}\\sin(${k}x)/x\\)。`,`\\(${k}\\)。`,'利用 \\(\\sin u/u\\to1\\)，并提出系数。');
+  generatedQ(`gen-limit-${k}-2`,'limit','指数极限',3,`求 \\(\\lim_{x\\to0}(e^{${k}x}-1)/x\\)。`,`\\(${k}\\)。`,'令 \\(u='+k+'x\\)，使用 \\((e^u-1)/u\\to1\\)。');
+  generatedQ(`gen-limit-${k}-3`,'limit','对数极限',3,`求 \\(\\lim_{x\\to0}\\ln(1+${k}x)/x\\)。`,`\\(${k}\\)。`,'使用 \\(\\ln(1+u)/u\\to1\\)。');
+  generatedQ(`gen-limit-${k}-4`,'limit','二阶等价',4,`求 \\(\\lim_{x\\to0}[1-\\cos(${k}x)]/x^2\\)。`,`\\(${k*k}/2\\)。`,'由 \\(1-\\cos u\\sim u^2/2\\)。');
+  generatedQ(`gen-limit-${k}-5`,'limit','幂指型精确渐近',5,`求 \\(\\lim_{n\\to\\infty}n[(1+${k}/n)^n-e^{${k}}]\\)。`,`\\(-${k*k}e^{${k}}/2\\)。`,'先取对数：\\(n\\ln(1+k/n)=k-k^2/(2n)+O(n^{-2})\\)，再还原指数。');
+  generatedQ(`gen-limit-${k}-6`,'limit','有理数列',2,`求 \\(\\lim_{n\\to\\infty}(n^2+${k}n)/(2n^2+${k})\\)。`,'\\(1/2\\)。','分子分母同除以 \\(n^2\\)。');
+  generatedQ(`gen-limit-${k}-7`,'limit','Newton 递推',4,`设 \\(x_1>0,x_{n+1}=(x_n+${k}/x_n)/2\\)，证明收敛并求极限。`,`\\(\\sqrt{${k}}\\)。`,'均值不等式给出下界；从第二项起单调下降，极限满足不动点方程。');
+
+  generatedQ(`gen-diff-${k}-1`,'diff','复合求导',3,`求 \\(f(x)=x^{${k+2}}\\ln x\\) 在 \\(x=1\\) 处的导数。`,'\\(1\\)。','\\(f^{\\prime}=(k+2)x^{k+1}\\ln x+x^{k+1}\\)，代入 1。');
+  generatedQ(`gen-diff-${k}-2`,'diff','切线',3,`求曲线 \\(y=e^{${k}x}\\) 在 \\(x=0\\) 处的切线。`,`\\(y=1+${k}x\\)。`,'点为 \\((0,1)\\)，斜率为 \\(y^{\\prime}(0)=k\\)。');
+  generatedQ(`gen-diff-${k}-3`,'diff','参数最值',4,`求 \\(x^{${k}}(1-x)\\) 在 \\([0,1]\\) 上的最大值。`,`在 \\(x=${k}/${k+1}\\) 取得 \\(${k}^{${k}}/${k+1}^{${k+1}}\\)。`,'求导后比较驻点与两个端点。');
+  generatedQ(`gen-diff-${k}-4`,'diff','高阶导数',3,`求 \\(e^{${k}x}\\) 的 \\(n\\) 阶导数。`,`\\(${k}^ne^{${k}x}\\)。`,'每求一次导数产生一个因子 \\(k\\)，归纳即得。');
+  generatedQ(`gen-diff-${k}-5`,'diff','凸性不等式',4,`证明对任意实数 \\(x\\)，\\(e^{${k}x}\\ge1+${k}x\\)。`,'结论成立，等号仅在 \\(x=0\\)。','指数函数凸，其图像位于 \\(x=0\\) 处切线上方。');
+  generatedQ(`gen-diff-${k}-6`,'diff','Taylor 余项',4,`写出 \\(e^x\\) 在 0 点的 ${k+2} 阶 Taylor 公式及 Lagrange 余项。`,`\\(e^x=\\sum_{j=0}^{${k+2}}x^j/j!+e^{\\xi}x^{${k+3}}/(${k+3})!\\)。`,'\\(\\xi\\) 位于 0 与 \\(x\\) 之间，因指数函数各阶导数均为自身。');
+  generatedQ(`gen-diff-${k}-7`,'diff','零点个数',5,`证明方程 \\(x^{${k+2}}+x+1=0\\) 的实根不超过 2 个。`,'实根至多 2 个。','若有 3 个不同实根，连续使用 Rolle 定理后，一阶导数应至少有 2 个零点；但其导数的导数至多在 0 处变号，矛盾。');
+
+  generatedQ(`gen-int1-${k}-1`,'int1','Beta 初等型',2,`计算 \\(\\int_0^1x^{${k}}dx\\)。`,`\\(1/${k+1}\\)。`,'直接使用幂函数积分公式。');
+  generatedQ(`gen-int1-${k}-2`,'int1','含对数积分',4,`计算 \\(\\int_0^1x^{${k}}\\ln x\,dx\\)。`,`\\(-1/${(k+1)*(k+1)}\\)。`,'对参数公式 \\(\\int_0^1x^a dx=1/(a+1)\\) 关于 \\(a\\) 求导。');
+  generatedQ(`gen-int1-${k}-3`,'int1','Wallis 递推',4,`计算 \\(\\int_0^{\\pi/2}\\sin^{${2*k+1}}x\,dx\\)。`,`\\(${Array.from({length:k},(_,i)=>2*(i+1)).join('\\cdot')||'1'}/${Array.from({length:k+1},(_,i)=>2*i+1).join('\\cdot')}\\)。`,'分部积分得到 \\(I_n=(n-1)I_{n-2}/n\\)，迭代至 \\(I_1=1\\)。');
+  generatedQ(`gen-int1-${k}-4`,'int1','有理积分',3,`计算 \\(\\int_0^1dx/(1+${k}x)\\)。`,`\\(\\ln(${k+1})/${k}\\)。`,'直接积分为 \\(k^{-1}\\ln(1+kx)\\)。');
+  generatedQ(`gen-int1-${k}-5`,'int1','对称积分',4,`计算 \\(\\int_0^{\\pi/2}\\frac{\\sin^{${k}}x}{\\sin^{${k}}x+\\cos^{${k}}x}dx\\)。`,'\\(\\pi/4\\)。','作代换 \\(x\\mapsto\\pi/2-x\\)，与原积分相加。');
+  generatedQ(`gen-int1-${k}-6`,'int1','变限积分',4,`设 \\(F(x)=\\int_0^{x^{${k}}}e^{t^2}dt\\)，求 \\(F^{\\prime}(x)\\)。`,`\\(${k}x^{${k-1}}e^{x^{${2*k}}}\\)。`,'由微积分基本定理及复合函数链式法则。');
+  generatedQ(`gen-int1-${k}-7`,'int1','Beta 积分',4,`计算 \\(\\int_0^1x^{${k}}(1-x)dx\\)。`,`\\(1/[${k+1}\\cdot${k+2}]\\)。`,'拆成两个幂函数积分或用 Beta 函数。');
+
+  generatedQ(`gen-geo-${k}-1`,'geo','点面距离',3,`求点 \\(( ${k},0,0)\\) 到平面 \\(x+y+z=0\\) 的距离。`,`\\(${k}/\\sqrt3\\)。`,'代入点到平面距离公式。');
+  generatedQ(`gen-geo-${k}-2`,'geo','平面方程',3,`写出过点 \\((1,0,0)\\) 且法向量为 \\((1,${k},1)\\) 的平面方程。`,`\\(x+${k}y+z=1\\)。`,'使用点法式。');
+  generatedQ(`gen-geo-${k}-3`,'geo','向量夹角',3,`求向量 \\((1,${k},0)\\) 与 \\((0,1,${k})\\) 夹角余弦。`,`\\(${k}/(1+${k*k})\\)。`,'点积为 \\(k\\)，两个模均为 \\(\\sqrt{1+k^2}\\)。');
+  generatedQ(`gen-geo-${k}-4`,'geo','球面',2,`写出球心 \\(( ${k},0,0)\\)、半径 ${k} 的球面方程。`,`\\((x-${k})^2+y^2+z^2=${k*k}\\)。`,'由点到球心的距离等于半径。');
+  generatedQ(`gen-geo-${k}-5`,'geo','混合积',4,`求向量 \\(( ${k},0,0),(0,1,0),(0,0,1)\\) 张成的平行六面体体积。`,`\\(${k}\\)。`,'体积为三向量混合积的绝对值。');
+  generatedQ(`gen-geo-${k}-6`,'geo','直线与平面',4,`直线 \\((x,y,z)=(0,0,0)+t(1,1,${k})\\) 与平面 \\(x+y+z=${k+2}\\) 的交点是什么？`,'\\((1,1,'+k+')\\)。','代入得 \\((k+2)t=k+2\\)，故 \\(t=1\\)。');
+  generatedQ(`gen-geo-${k}-7`,'geo','球面切平面',3,`求球面 \\(x^2+y^2+z^2=${k*k}\\) 在 \\(( ${k},0,0)\\) 处的切平面。`,`\\(x=${k}\\)。`,'半径方向 \\((k,0,0)\\) 是切平面法向量。');
+
+  generatedQ(`gen-md-${k}-1`,'md','梯度',3,`求 \\(f=x^2+${k}y^2\\) 在 \\((1,1)\\) 的梯度。`,`\\((2,${2*k})\\)。`,'分别求两个偏导后代入。');
+  generatedQ(`gen-md-${k}-2`,'md','方向导数',3,`求 \\(f=x^2+${k}y^2\\) 在 \\((1,1)\\) 沿 \\((1,1)\\) 方向的方向导数。`,`\\(${2+2*k}/\\sqrt2\\)。`,'先将方向单位化，再与梯度 \\((2,2k)\\) 点乘。');
+  generatedQ(`gen-md-${k}-3`,'md','条件极值',4,`在 \\(x^2+y^2=${k*k}\\) 上求 \\(xy\\) 的最大最小值。`,`最大 \\(${k*k}/2\\)，最小 \\(-${k*k}/2\\)。`,'由 \\(2|xy|\\le x^2+y^2\\)，等号在 \\(|x|=|y|\\) 时取得。');
+  generatedQ(`gen-md-${k}-4`,'md','Hessian 判别',4,`讨论二次型 \\(f=x^2+${k}xy+y^2\\) 在原点的极值性质。`,k<2?'严格极小。':k===2?'非严格极小。':'鞍点。','Hessian 特征值为 \\(2\\pm k\\)，据正定、半正定或不定分类。');
+  generatedQ(`gen-md-${k}-5`,'md','隐函数求导',3,`由 \\(x^2+y^2=${k*k}\\) 确定 \\(y(x)\\)，求第一象限点 \\(( ${k}/\\sqrt2,${k}/\\sqrt2)\\) 处 \\(y^{\\prime}\\)。`,'\\(-1\\)。','隐式求导得 \\(y^{\\prime}=-x/y\\)。');
+  generatedQ(`gen-md-${k}-6`,'md','齐次函数',4,`验证 \\(f=x^{${k}}+y^{${k}}\\) 满足 Euler 恒等式。`,`\\(xf_x+yf_y=${k}f\\)。`,'直接求偏导，或利用 \\(f(tx,ty)=t^kf(x,y)\\)。');
+  generatedQ(`gen-md-${k}-7`,'md','二重极限',4,`求 \\(\\lim_{(x,y)\\to(0,0)}(x^2+${k}y^2)/(x^2+y^2)\\) 是否存在。`,'当 \\(k=1\\) 时为 1；其余参数不成立（本组仅第 1 题存在）。','沿 \\(y=0\\) 极限为 1，沿 \\(x=0\\) 极限为 \\(k\\)。');
+
+  generatedQ(`gen-mi-${k}-1`,'mi','二重积分面积',2,`计算 \\(\\iint_{x^2+y^2\\le${k*k}}1\,dA\\)。`,`\\(${k*k}\\pi\\)。`,'积分即半径为 \\(k\\) 的圆盘面积。');
+  generatedQ(`gen-mi-${k}-2`,'mi','极坐标',4,`计算 \\(\\iint_{x^2+y^2\\le${k*k}}(x^2+y^2)dA\\)。`,`\\(${k**4}\\pi/2\\)。`,'极坐标下为 \\(2\\pi\\int_0^kr^3dr\\)。');
+  generatedQ(`gen-mi-${k}-3`,'mi','Gauss 公式',4,`向量场 \\(F=(x,y,z)\\) 通过半径 ${k} 球面外侧的通量是多少？`,`\\(${4*k**3}\\pi\\)。`,'散度为 3，乘球体积 \\(4\\pi k^3/3\\)。');
+  generatedQ(`gen-mi-${k}-4`,'mi','Green 公式',4,`设 \\(C:x^2+y^2=${k*k}\\) 取正向，求 \\(\\oint_C(-y\,dx+x\,dy)\\)。`,`\\(${2*k*k}\\pi\\)。`,'Green 公式中 \\(Q_x-P_y=2\\)，结果为 2 倍圆盘面积。');
+  generatedQ(`gen-mi-${k}-5`,'mi','三重积分体积',2,`计算 \\(\\iiint_{x^2+y^2+z^2\\le${k*k}}1\,dV\\)。`,`\\(${4*k**3}\\pi/3\\)。`,'积分即球体体积。');
+  generatedQ(`gen-mi-${k}-6`,'mi','对称性',3,`设 \\(D:x^2+y^2\\le${k*k}\\)，计算 \\(\\iint_Dx^{${2*k-1}}dA\\)。`,'\\(0\\)。','区域关于 \\(y\\) 轴对称，而被积函数关于 \\(x\\) 为奇函数。');
+  generatedQ(`gen-mi-${k}-7`,'mi','极坐标指数积分',4,`计算 \\(\\iint_{x^2+y^2\\le${k*k}}e^{x^2+y^2}dA\\)。`,`\\(\\pi(e^{${k*k}}-1)\\)。`,'极坐标下 \\(2\\pi\\int_0^kre^{r^2}dr\\)。');
+
+  generatedQ(`gen-series-${k}-1`,'series','p级数',3,`判断 \\(\\sum_{n=1}^{\\infty}n^{-(1+${k}/4)}\\) 的敛散性。`,'收敛。','这是 \\(p=1+k/4>1\\) 的 p 级数。');
+  generatedQ(`gen-series-${k}-2`,'series','几何级数',2,`求 \\(\\sum_{n=1}^{\\infty}(${k}/${k+1})^n\\)。`,`\\(${k}\\)。`,'首项和公比均为 \\(k/(k+1)\\)，套用几何级数求和。');
+  generatedQ(`gen-series-${k}-3`,'series','交错级数求和',4,`求 \\(\\sum_{n=1}^{\\infty}(-1)^{n-1}/(${k}n)\\)。`,`\\(\\ln2/${k}\\)。`,'利用交错调和级数 \\(\\sum(-1)^{n-1}/n=\\ln2\\)。');
+  generatedQ(`gen-series-${k}-4`,'series','幂级数区间',5,`求 \\(\\sum_{n=1}^{\\infty}x^n/(${k}^nn)\\) 的收敛域。`,`\\([-${k},${k})\\)。`,'半径为 \\(k\\)；\\(x=k\\) 为调和级数发散，\\(x=-k\\) 为交错调和级数收敛。');
+  generatedQ(`gen-series-${k}-5`,'series','微分求和',4,`求 \\(\\sum_{n=1}^{\\infty}n/(${k+1})^n\\)。`,`\\((${k+1})/${k*k}\\)。`,'由 \\(\\sum nr^n=r/(1-r)^2\\)，取 \\(r=1/(k+1)\\)。');
+  generatedQ(`gen-series-${k}-6`,'series','望远镜',4,`求 \\(\\sum_{n=1}^{\\infty}1/[n(n+${k})]\\)。`,`\\(H_${k}/${k}\\)。`,'分解为 \\(k^{-1}(1/n-1/(n+k))\\)，部分和只留下前 \\(k\\) 项。');
+  generatedQ(`gen-series-${k}-7`,'series','Stirling 比值',5,`求 \\(\\lim_{n\\to\\infty}\\sqrt[n]{n!}/n\\)。`,'\\(e^{-1}\\)。','由 Stirling 公式 \\((n!)^{1/n}\\sim n/e\\)。');
+
+  generatedQ(`gen-ode-${k}-1`,'ode','一阶齐次线性',2,`求解 \\(y^{\\prime}+${k}y=0\\)。`,`\\(y=Ce^{-${k}x}\\)。`,'分离变量或使用特征指数。');
+  generatedQ(`gen-ode-${k}-2`,'ode','一阶非齐次线性',3,`求解 \\(y^{\\prime}+${k}y=e^x\\)。`,`\\(y=Ce^{-${k}x}+e^x/${k+1}\\)。`,'积分因子为 \\(e^{kx}\\)，或待定系数求特解。');
+  generatedQ(`gen-ode-${k}-3`,'ode','常系数方程',3,`求解 \\(y^{\\prime\\prime}-${k*k}y=0\\)。`,`\\(y=C_1e^{${k}x}+C_2e^{-${k}x}\\)。`,'特征根为 \\(\\pm k\\)。');
+  generatedQ(`gen-ode-${k}-4`,'ode','振动方程',3,`求解 \\(y^{\\prime\\prime}+${k*k}y=0\\)。`,`\\(y=C_1\\cos(${k}x)+C_2\\sin(${k}x)\\)。`,'特征根为 \\(\\pm ki\\)。');
+  generatedQ(`gen-ode-${k}-5`,'ode','可分离变量',3,`求解 \\(y^{\\prime}=${k}xy\\)。`,`\\(y=Ce^{${k}x^2/2}\\)。`,'当 \\(y\\ne0\\) 时分离变量，零解包含在 \\(C=0\\) 中。');
+  generatedQ(`gen-ode-${k}-6`,'ode','Logistic 方程',4,`求解 \\(y^{\\prime}=${k}y(1-y)\\)。`,`\\(y=1/(1+Ce^{-${k}x})\\)，另有平衡解 \\(y=0\\)。`,'分式分解后积分；分离时除掉的平衡解要补回。');
+  generatedQ(`gen-ode-${k}-7`,'ode','Euler 方程',5,`求解 \\(x^2y^{\\prime\\prime}-${k*(k-1)}y=0\\;(x>0)\\)。`,k===1?'\\(y=C_1x+C_2\\)。':`\\(y=C_1x^{${k}}+C_2x^{${1-k}}\\)。`,'试 \\(y=x^m\\)，特征方程为 \\(m(m-1)-k(k-1)=0\\)。');
+
+  generatedQ(`gen-la-${k}-1`,'la','行列式',2,`求 \\(\\operatorname{diag}(${k},1,1)\\) 的行列式。`,`\\(${k}\\)。`,'三角矩阵行列式等于对角元之积。');
+  generatedQ(`gen-la-${k}-2`,'la','Jordan 型矩阵',4,`矩阵 \\(A=\\begin{pmatrix}${k}&1\\\\0&${k}\\end{pmatrix}\\) 的特征值及可对角化性如何？`,`唯一特征值为 \\(${k}\\)（二重），不可对角化。`,'特征空间维数为 1，小于代数重数 2。');
+  generatedQ(`gen-la-${k}-3`,'la','线性方程组',3,`解 \\(${k+1}x+y=1,\ x+${k+1}y=1\\)。`,`\\(x=y=1/${k+2}\\)。`,'两式相减得 \\(x=y\\)，再代回。');
+  generatedQ(`gen-la-${k}-4`,'la','正定二次型',4,`判断 \\(x^2+2${k}xy+(${k*k}+1)y^2\\) 的正定性。`,'正定。','配方为 \\((x+ky)^2+y^2\\)，除原点外严格为正。');
+  generatedQ(`gen-la-${k}-5`,'la','矩阵秩',3,`求矩阵 \\(A=uv^T\\) 的秩，其中 \\(u=(${k},1)^T,v=(1,1)^T\\)。`,'\\(1\\)。','两个向量均非零，外积矩阵的列空间由 \\(u\\) 张成。');
+  generatedQ(`gen-la-${k}-6`,'la','矩阵幂',5,`设 \\(A=\\begin{pmatrix}${k}&1\\\\0&${k}\\end{pmatrix}\\)，求 \\(A^n\\)。`,`\\(A^n=\\begin{pmatrix}${k}^n&n${k}^{n-1}\\\\0&${k}^n\\end{pmatrix}\\)。`,'写成 \\(A=kI+N,N^2=0\\)，用二项式展开。');
+  generatedQ(`gen-la-${k}-7`,'la','特殊行列式',4,`三阶矩阵对角元均为 \\(${k+1}\\)，非对角元均为 1，求行列式。`,`\\(${k*k}(${k+3})\\)。`,'该矩阵特征值为 \\(k+3,k,k\\)，行列式为其乘积。');
+}
+
+/* ========================================================================== 
+   2026-09-20 新增资料包原题：极限、一元微分、一元积分、ODE、每日一练。
+   ========================================================================== */
+sourceQ('pack-limit-01','limit','数列极限与 Stirling',5,'求 \\(\\lim_{n\\to\\infty}(1/n-\\sin(1/n))^{1/3}\\sqrt[n]{n!}\\)。','\\(1/(e\\sqrt[3]{6})\\)。','\\(1/n-\\sin(1/n))^{1/3}\\sim1/(\\sqrt[3]6n)\\)，而 \\(\\sqrt[n]{n!}\\sim n/e\\)。','新增资料 · 第1章练习');
+sourceQ('pack-limit-02','limit','数列求和极限',4,'设 \\(a>1\\)，求 \\(\\lim_{n\\to\\infty}(1/a+2/a^2+\\cdots+n/a^n)\\)。','\\(a/(a-1)^2\\)。','由 \\(\\sum_{k\\ge1}kx^k=x/(1-x)^2\\)，取 \\(x=1/a\\)。','新增资料 · 第1章练习');
+sourceQ('pack-limit-03','limit','函数差分极限',5,'已知 \\(f\\) 在实轴可导，且 \\(\\lim_{x\\to\\infty}f^{\\prime}(x)=e\\)，若 \\(\\lim_{x\\to\\infty}((x+c)/(x-c))^x=\\lim_{x\\to\\infty}[f(x)-f(x-1)]\\)，求 \\(c\\)。','\\(c=1/2\\)。','左端为 \\(e^{2c}\\)；右端由 Lagrange 中值定理趋于 \\(e\\)，故 \\(2c=1\\)。','新增资料 · 第1章练习');
+sourceQ('pack-limit-04','limit','根指数极限',5,'设 \\(n\\) 为正整数，求 \\(\\lim_{x\\to1}[1-\\sqrt[n]{\\cos(2n\\pi x)}]/[(x-1)(x^n-1)]\\)。','\\(2\\pi^2\\)。','令 \\(h=x-1\\)。分子 \\(\\sim2n\\pi^2h^2\\)，分母 \\(\\sim nh^2\\)。','新增资料 · 第1章练习');
+sourceQ('pack-limit-05','limit','连续性与零点',5,'设 \\(f\\in C[a,b]\\)，且对每个 \\(x\\in[a,b]\\) 都存在 \\(y\\in[a,b]\\) 使 \\(f(y)=|f(x)|/2\\)。证明 \\(f\\) 在区间内有零点。','存在 \\(\\xi\\in[a,b]\\) 使 \\(f(\\xi)=0\\)。','从任一点递推选取 \\(x_{n+1}\\) 使 \\(|f(x_{n+1})|=|f(x_n)|/2\\)。紧致区间中取收敛子列，再由连续性得极限点函数值为 0。','新增资料 · 第1章练习');
+sourceQ('pack-limit-06','limit','竞赛真题极限',5,'求 \\(\\lim_{x\\to+\\infty}[(x^3+x/2-\\tan(1/x))e^{1/x}-\\sqrt{1+x^6}]\\)。','\\(2/3\\)。','令 \\(t=1/x\\)，将 \\(e^t,\\tan t,\\sqrt{1+t^6}\\) 展开到足以保留常数项，所有负幂项消去后余 \\(2/3\\)。','新增资料 · 每日一练（极限周三）');
+sourceQ('pack-limit-07','limit','复合函数极限',4,'若 \\(f(1)=0,f^{\\prime}(1)\\) 存在，求 \\(\\lim_{x\\to0}f(\\sin^2x+\\cos x)\\tan3x/[(e^{x^2}-1)\\sin x]\\)。','\\(3f^{\\prime}(1)/2\\)。','\\(\\sin^2x+\\cos x)-1\\sim x^2/2\\)，其余因子分别等价于 \\(3x,x^2,x\\)。','新增资料 · 每日一练（极限周三）');
+sourceQ('pack-limit-08','limit','单调有界证明',5,'设 \\(f(0)=0\\)，且 \\(x\\ge0\\) 时 \\(f^{\\prime}(x)=1/[x^2+f^2(x)+1]\\)。证明 \\(\\lim_{x\\to\\infty}f(x)\\) 存在且不大于 \\(\\pi/2\\)。','结论成立。','\\(f^{\\prime}>0\\)，故 \\(f\\) 单调；又 \\(0<f^{\\prime}(x)\\le1/(1+x^2)\\)，积分得 \\(0\\le f(x)\\le\\arctan x<\\pi/2\\)。','新增资料 · 每日一练（极限周三）');
+sourceQ('pack-limit-09','limit','乘积展开',5,'求 \\(\\lim_{x\\to0}[1-\\cos x\\sqrt{\\cos2x}\\sqrt[3]{\\cos3x}]/x^2\\)。','\\(3\\)。','三个因子的二阶损失依次为 \\(x^2/2,x^2,3x^2/2\\)，乘积为 \\(1-3x^2+o(x^2)\\)。','新增资料 · 每日一练（极限周二）');
+sourceQ('pack-limit-10','limit','待定系数极限',5,'设 \\(f\\) 在 0 附近有二阶连续导数，且 \\(f(0),f^{\\prime}(0),f^{\\prime\\prime}(0)\\ne0\\)。求唯一的 \\(k_1,k_2,k_3\\)，使 \\([k_1f(h)+k_2f(2h)+k_3f(3h)-f(0)]/h^2\\to0\\)。','\\((k_1,k_2,k_3)=(3,-3,1)\\)。','Taylor 展开后令常数、一次、二次项系数均为零，解三元线性方程组。','新增资料 · 每日一练（极限周二）');
+sourceQ('pack-limit-11','limit','凸函数切线截距',5,'设 \\(f\\) 二阶可导，\\(f^{\\prime\\prime}>0,f(0)=f^{\\prime}(0)=0\\)。点 \\(P(x,f(x))\\) 处切线在 \\(x\\) 轴截距为 \\(u\\)，求 \\(\\lim_{x\\to0}x^3f(u)/[f(x)\\sin^3u]\\)。','\\(2\\)。','\\(u=x-f/f^{\\prime}\\sim x/2\\)，且 \\(f(u)/f(x)\\sim(u/x)^2=1/4\\)，再用 \\(\\sin u\\sim u\\)。','新增资料 · 每日一练（极限周二）');
+
+sourceQ('pack-diff-01','diff','变限积分与极值',4,'设 \\(f(x)=\\int_0^xe^{t^2}\\sin tdt\\)，\\(g(x)=\\sin^2x\\int_0^xe^{t^2}dt\\)。判断原点的极值与拐点性质。','\\(x=0\\) 是 \\(f\\) 的极小点，且 \\((0,0)\\) 是 \\(g\\) 的拐点。','\\(f(x)\\sim x^2/2\\)，\\(g(x)\\sim x^3\\)。','新增资料 · 第2章综合练习');
+sourceQ('pack-diff-02','diff','切线截距微分方程',5,'正曲线 \\(y=y(x)\\) 过 \\((1,2)\\)，任一点到 \\(y\\) 轴的距离等于该点切线在 \\(y\\) 轴的截距。(1) 求曲线；(2) 求 \\(F(x)=\\int_1^xy(t)dt\\) 在 \\((0,+\\infty)\\) 的最大值。','\\(y=x(2-\\ln x)\\)；最大值 \\((e^4-5)/4\\)。','截距条件给 \\(y-xy^{\\prime}=x\\)，解线性方程；\\(F^{\\prime}=y\\) 在 \\(x=e^2\\) 变号。','新增资料 · 第2章综合练习');
+sourceQ('pack-diff-03','diff','斜渐近线',4,'求 \\(y=x\\ln(e+1/(x-1))\\) 在 \\(x\\to+\\infty\\) 时的斜渐近线。','\\(y=x+1/e\\)。','\\(a=\\lim f/x=1\\)，\\(b=\\lim(f-x)=1/e\\)。','新增资料 · 第2章综合练习');
+sourceQ('pack-diff-04','diff','极限命题判断',4,'设 \\(f\\) 在 \\([0,+\\infty)\\) 可导。下列命题中必真的是什么：若 \\(\\lim f(x)\\) 存在，则 \\(\\lim_{x\\to\\infty}x^{-1}\\int_0^xf(t)dt\\) 存在。','该命题为真，且两极限相等。','这是连续参数形式的 Cesàro 平均定理；其余“由函数极限推导数极限”或逆命题均不成立。','新增资料 · 第2章综合练习');
+sourceQ('pack-diff-05','diff','反正切高阶导',4,'设 \\(y=\\arctan x\\)，求 \\(y^{(n)}(0)\\)。','偶数 \\(n\\) 时为 0；\\(n=2m+1\\) 时为 \\((-1)^m(2m)!\\)。','由 \\(\\arctan x=\\sum_{m\\ge0}(-1)^mx^{2m+1}/(2m+1)\\) 比较 Taylor 系数。','新增资料 · 第2章综合练习');
+sourceQ('pack-diff-06','diff','Rolle 定理串联',5,'设 \\(f\\) 在 \\([0,1]\\) 上二阶可导，\\(f(0)=f(1),f^{\\prime}(1)=1\\)。证明存在 \\(\\xi\\in(0,1)\\) 使 \\(f^{\\prime\\prime}(\\xi)=2\\)。','结论成立。','令 \\(F(x)=f(x)-x^2\\)。有 \\(F(0)=F(1)\\) 且 \\(F^{\\prime}(1)=-1\\)，先后使用 Rolle 与导数介值/中值定理得到 \\(F^{\\prime\\prime}(\\xi)=0\\)。','新增资料 · 第2章综合练习');
+sourceQ('pack-diff-07','diff','微分不等式',5,'设 \\(f(0)=0\\)，且 \\(|f^{\\prime}(x)|\\le p|f(x)|,0<p<1\\)。证明 \\(f\\equiv0\\)。','\\(f(x)\\equiv0\\)。','在任意有限区间取 \\(|f|\\) 最大点，利用 Lagrange 中值定理得最大值不超过 \\(p\\) 倍自身，故只能为 0；负半轴同理。','新增资料 · 第2章综合练习');
+sourceQ('pack-diff-08','diff','隐函数二阶导',4,'由 \\(xe^{f(y)}=e^y\\ln29\\) 确定 \\(y(x)\\)。求 \\(y^{\\prime\\prime}\\)（假设分母不为零）。','\\(y^{\\prime\\prime}=[f^{\\prime\\prime}(y)-(1-f^{\\prime}(y))^2]/[x^2(1-f^{\\prime}(y))^3]\\)。','两边取对数后连续两次隐式求导。','新增资料 · 第2章每日一题');
+sourceQ('pack-diff-09','diff','Leibniz 高阶导',4,'设 \\(f(x)=(x+1)^ne^{-x^2}\\)，求 \\(f^{(n)}(-1)\\)。','\\(n!e^{-1}\\)。','在 Leibniz 公式中，点 \\(x=-1\\) 只有多项式被求 \\(n\\) 次的项不为零。','新增资料 · 第2章每日一题');
+sourceQ('pack-diff-10','diff','复指数高阶导',3,'设 \\(f(x)=e^x\\sin2x\\)，求 \\(f^{(4)}(0)\\)。','\\(-24\\)。','写成 \\(\\operatorname{Im}e^{(1+2i)x}\\)，答案是 \\(\\operatorname{Im}(1+2i)^4=-24\\)。','新增资料 · 第2章每日一题');
+sourceQ('pack-diff-11','diff','有理函数高阶导',4,'设 \\(f(x)=1/(x^2-3x+2)\\)，求 \\(f^{(n)}(0)\\)。','\\(n![1-2^{-(n+1)}]\\)。','部分分式展开后在原点比较幂级数系数。','新增资料 · 第2章每日一题');
+sourceQ('pack-diff-12','diff','零点与积分',5,'设 \\(f\\) 在 \\([0,1]\\) 可导，\\(f(0),f(1)>0\\)，且 \\(\\int_0^1f=0\\)。证明：(1) \\(f\\) 至少有两个内点零点；(2) 存在 \\(\\xi\\) 使 \\(f^{\\prime}(\\xi)+3f^3(\\xi)=0\\)。','两结论均成立。','积分为零迫使函数取负值，结合端点正值两次用介值定理；再对 \\(e^{3\\int f^2}f\\) 或等价辅助函数应用 Rolle。','新增资料 · 第2章每日一题');
+sourceQ('pack-diff-13','diff','多点中值定理',5,'设 \\(f\\in C[0,1]\\cap D(0,1)\\)，\\(f(0)=0,f(1)=2\\)。证明存在两两互异 \\(\\xi_1,\\xi_2,\\xi_3\\in(0,1)\\)，使 \\(f^{\\prime}(\\xi_1)f^{\\prime}(\\xi_2)\\sqrt{1-\\xi_3}\\ge2\\)。','结论成立。','将区间分段使用 Lagrange 中值定理，并对权函数选择分点；若各导数乘积均过小则与总增量 2 矛盾。','新增资料 · 第2章每日一题');
+sourceQ('pack-diff-14','diff','导数估计',5,'设 \\(f\\) 在 \\([0,1]\\) 二阶可导，且 \\(|f|\\le A,|f^{\\prime\\prime}|\\le B\\)。证明 \\(|f^{\\prime}(x)|\\le2A+B/2\\)。','结论成立。','分别在可容纳的长度区间上用 Taylor 公式，将 \\(f^{\\prime}(x)\\) 表成函数差商加二阶余项并统一估计。','新增资料 · 第2章每日一题');
+sourceQ('pack-diff-15','diff','微分方程型有界性',5,'设 \\(f\\in C^1[0,+\\infty)\\)，满足 \\(3(3+f^2)f^{\\prime}=2(1+f^2)^2e^{-x^2}\\)，且 \\(f(0)\\le1\\)。证明 \\(f\\) 在半轴有界。','存在常数 \\(M>0\\) 使 \\(|f(x)|\\le M\\)。','分离变量后构造关于 \\(f\\) 的单调原函数；右端 \\(e^{-x^2}\\) 可积，故该原函数有界，从而 \\(f\\) 不能逃向无穷。','新增资料 · 第2章每日一题');
+sourceQ('pack-diff-16','diff','根与幂级数系数',5,'设多项式 \\(f\\) 仅有正实根，且 \\(f^{\\prime}(x)/f(x)=-\\sum_{n=0}^{\\infty}c_nx^n\\)。证明 \\(c_n>0\\)，并求 \\(\\lim_{n\\to\\infty}1/\\sqrt[n]{c_n}\\)。','极限等于 \\(f\\) 的最小正根。','将对数导数按各根作部分分式并展开几何级数：\\(c_n\\) 是各正根 \\((n+1)\\) 次倒数的正和，根值判别由最小根主导。','新增资料 · 第2章每日一题');
+
+sourceQ('pack-int-01','int1','三角有理积分',4,'求 \\(\\int dx/(1+\\sin x+\\cos x)\\)。','\\(\\ln|1+\\tan(x/2)|+C\\)。','取 \\(t=\\tan(x/2)\\)，积分化为 \\(\\int dt/(1+t)\\)。','新增资料 · 第3章练习');
+sourceQ('pack-int-02','int1','有理函数积分',5,'求 \\(\\int(1+x^2)/(1+x^4)dx\\)。','\\(\\frac1{\\sqrt2}[\\arctan(\\sqrt2x+1)+\\arctan(\\sqrt2x-1)]+C\\)。','将 \\(1+x^4\\) 分解为两个实二次因式并作部分分式，或凑 \\(d(x-1/x)\\)。','新增资料 · 第3章练习');
+sourceQ('pack-int-03','int1','积分递推',5,'设 \\(I_n=\\int dx/[x^n\\sqrt{1+x^2}]\\)。求递推式并计算 \\(I_3\\)。','\\(I_{n+2}=-\\frac n{n+1}I_n-\\frac{\\sqrt{1+x^2}}{(n+1)x^{n+1}}\\)；\\(I_3=\\frac12\\ln|[\\sqrt{1+x^2}+1]/x|-\\frac{\\sqrt{1+x^2}}{2x^2}+C\\)。','将 \\(d(\\sqrt{1+x^2})\\) 与分部积分组合。','新增资料 · 第3章练习');
+sourceQ('pack-int-04','int1','分部积分闭环',5,'求 \\(\\int xe^{\\arctan x}/(1+x^2)^{3/2}dx\\)。','\\(e^{\\arctan x}(x-1)/(2\\sqrt{1+x^2})+C\\)。','以 \\(e^{\\arctan x}\\) 为微分因子分部积分，所得积分与原式形成线性方程。','新增资料 · 第3章练习');
+sourceQ('pack-int-05','int1','奇偶对称',4,'设 \\(f\\) 连续且 \\(f(x)+f(-x)=2\\)。求 \\(\\int_{-1}^1[f(x)+x^2\\ln(x+\\sqrt{x^2+1})]dx\\)。','\\(2\\)。','第一项由配对积分得 2；第二项是奇函数，积分为 0。','新增资料 · 第3章练习');
+sourceQ('pack-int-06','int1','对称配对定理',5,'设 \\(g\\) 为偶函数，\\(f(x)+f(-x)=A\\)。证明 \\(\\int_{-a}^af(x)g(x)dx=A\\int_0^ag(x)dx\\)，并求 \\(\\int_{-\\pi/2}^{\\pi/2}|\\sin x|\\arctan(e^x)dx\\)。','一般结论成立；具体积分为 \\(\\pi/2\\)。','把负半区间换元到正半区间；用 \\(\\arctan e^x+\\arctan e^{-x}=\\pi/2\\)。','新增资料 · 第3章练习');
+sourceQ('pack-int-07','int1','倒代换反常积分',5,'设 \\(\\alpha\\in\\mathbb R\\)，求 \\(\\int_0^{+\\infty}dx/[(1+x^2)(1+x^\\alpha)]\\)。','\\(\\pi/4\\)。','作 \\(x=1/t\\) 与原式相加，分子合为 \\(1+x^\\alpha\\)。','新增资料 · 第3章练习');
+sourceQ('pack-int-08','int1','周期与绝对值',4,'设 \\(n\\) 为正整数，计算 \\(I=\\int_{e^{-2n\\pi}}^1|d[\\cos(\\ln(1/x))]/dx|dx\\)。','\\(4n\\)。','令 \\(u=\\ln x\\)，化为长度 \\(2n\\pi\\) 上的 \\(|\\sin u|\\) 积分。','新增资料 · 第3章练习');
+sourceQ('pack-int-09','int1','积分 Jensen',5,'设 \\(f^{\\prime\\prime}\\ge0\\)，\\(u\\) 连续，\\(a>0\\)。证明 \\(a^{-1}\\int_0^af(u(t))dt\\ge f(a^{-1}\\int_0^au(t)dt)\\)。','结论成立。','在平均值处作凸函数切线估计，再积分；线性项的平均恰为 0。','新增资料 · 第3章练习');
+sourceQ('pack-int-10','int1','对称三角积分',4,'计算 \\(\\int_0^{\\pi/2}\\sin^3x/(\\sin x+\\cos x)dx\\)。','\\((\\pi-1)/4\\)。','与余弦对应积分相等；两者之和化为 \\(\\int(1-\\sin x\\cos x)dx\\)。','新增资料 · 每日一练（积分周四）');
+sourceQ('pack-int-11','int1','区间对称',5,'计算 \\(\\int_{-\\pi}^{\\pi}x\\sin^5x\\arctan(e^x)dx\\)。','\\(4\\pi^2/15\\)。','利用 \\(\\arctan(e^x)+\\arctan(e^{-x})=\\pi/2\\) 配对，再用 \\(\\int_0^\\pi\\sin^5x dx=16/15\\)。','新增资料 · 每日一练（积分周四）');
+sourceQ('pack-int-12','int1','三角换元定积分',4,'计算 \\(\\int_0^1\\ln(1+x)/(1+x^2)dx\\)。','\\(\\pi\\ln2/8\\)。','令 \\(x=\\tan t\\)，再将 \\(t\\) 与 \\(\\pi/4-t\\) 配对。','新增资料 · 每日一练（积分周四）');
+sourceQ('pack-int-13','int1','取整函数反常积分',5,'设 \\(f(x)=\\lfloor2x\\rfloor-2\\lfloor x\\rfloor,x\\ge1\\)。证明 \\(\\int_1^\\infty f(x)/x^2dx\\) 收敛并求值。','\\(2\\ln2-1\\)。','每个 \\([n,n+1)\\) 的后半段 \\(f=1\\)、前半段为 0；分段求和并化为调和数极限。','新增资料 · 每日一练（积分周四）');
+sourceQ('pack-int-14','int1','四次有理积分',5,'求 \\(\\int dx/(1+x^4)\\)。','\\(\\frac1{4\\sqrt2}\\ln\\frac{x^2+\\sqrt2x+1}{x^2-\\sqrt2x+1}+\\frac1{2\\sqrt2}[\\arctan(\\sqrt2x+1)+\\arctan(\\sqrt2x-1)]+C\\)。','分解 \\(x^4+1=(x^2+\\sqrt2x+1)(x^2-\\sqrt2x+1)\\) 后作部分分式。','新增资料 · 每日一练（积分周三）');
+sourceQ('pack-int-15','int1','经典反常积分',4,'计算 \\(\\int_0^{+\\infty}dx/(1+x^4)\\)。','\\(\\pi/(2\\sqrt2)\\)。','可用倒代换化到 \\([0,1]\\) 后结合上一题原函数，或用 Beta 积分。','新增资料 · 每日一练（积分周三）');
+sourceQ('pack-int-16','int1','万能代换',4,'求 \\(\\int(1+\\sin x)/(1+\\sin x+\\cos x)dx\\)。','\\(x/2+\\ln|\\sec(x/2)|+C\\)。','令 \\(t=\\tan(x/2)\\)，化为 \\((t+1)/(1+t^2)\\) 的积分。','新增资料 · 每日一练（积分周三）');
+sourceQ('pack-int-17','int1','取整函数分段积分',4,'设 \\(x\\ge0\\)，求 \\(\\int\\lfloor x\\rfloor|\\sin\\pi x|dx\\)。','在 \\(n\\le x<n+1\\) 上，一个原函数为 \\((-1)^{n+1}n\\cos(\\pi x)/\\pi+C_n\\)。','固定整数段内 \\(\\lfloor x\\rfloor=n\\)，且 \\(|\\sin\\pi x|=(-1)^n\\sin\\pi x\\)。','新增资料 · 每日一练（积分周三）');
+sourceQ('pack-int-18','int1','根式换元积分',5,'求 \\(\\int[\\sqrt{x-1}\\arctan\\sqrt{x-1}]/x\,dx\\)。','令 \\(t=\\sqrt{x-1}\\)，结果为 \\(2t\\arctan t-\\ln(1+t^2)-(\\arctan t)^2+C\\)。','代换后被积函数为 \\(2t^2\\arctan t/(1+t^2)\\)，拆成两项积分。','新增资料 · 每日一练（积分周三）');
+sourceQ('pack-int-19','int1','变限积分复合',4,'设 \\(f(x)=\\int_0^x\\cos t/(1+\\sin^2t)dt\\)，求 \\(\\int_0^{\\pi/2}f^{\\prime}(x)/[1+f^2(x)]dx\\)。','\\(\\arctan(\\pi/4)\\)。','\\(f(x)=\\arctan(\\sin x)\\)，原积分是 \\(\\arctan f(x)\\) 的端点差。','新增资料 · 每日一练（积分周三）');
+
+sourceQ('pack-ode-01','ode','积分方程化微分方程',5,'连续函数满足 \\(\\int_0^xf(t)dt=x+\\sin x+\\int_0^xtf(x-t)dt\\)。求 \\(f(x)\\)。','\\(f(x)=(\\sin x+\\cos x)/2+3e^x/2\\)。','卷积项换元后连续两次求导，得 \\(f^{\\prime}-f=-\\sin x\\)，并由原式得 \\(f(0)=2\\)。','新增资料 · 第4章练习');
+sourceQ('pack-ode-02','ode','Bernoulli 变换',5,'求 \\(y^{\\prime} x\\ln x\\sin y+(1-x\\cos y)\\cos y=0\\) 的解。','隐式通解 \\((x+C)\\cos y=\\ln x\\)，另有 \\(y=k\\pi+\\pi/2\\)。','令 \\(u=\\cos y\\) 得 Bernoulli 方程，再令 \\(z=1/u\\)；补回 \\(u=0\\) 特解。','新增资料 · 第4章练习');
+sourceQ('pack-ode-03','ode','可降阶方程',4,'求 \\(y^{\\prime\\prime}-(y^{\\prime})^3=0\\) 的通解。','\\(y=C\\) 或 \\((y+C_1)^2=-2x+C_2\\)。','令 \\(p(y)=y^{\\prime}\\)，则 \\(y^{\\prime\\prime}=pdp/dy\\)，分情况积分。','新增资料 · 第4章练习');
+sourceQ('pack-ode-04','ode','准齐次方程',5,'求 \\((x+y)dx+dy=(x-y)dy+3dx\\) 的通解。','\\(\\arctan\\frac{y+1}{x+2}-\\frac12\\ln[1+((y+1)/(x+2))^2]=\\ln|x+2|+C\\)。','先平移 \\(X=x+2,Y=y+1\\)，再令 \\(u=Y/X\\) 化为可分离变量方程。','新增资料 · 第4章练习');
+sourceQ('pack-ode-05','ode','反求微分方程',5,'已知 \\(y_1=xe^x+e^{2x},y_2=xe^x+e^{-x},y_3=xe^x+e^{2x}-e^{-x}\\) 是同一二阶常系数线性非齐次方程的三个解，求该方程。','\\(y^{\\prime\\prime}-y^{\\prime}-2y=(1-2x)e^x\\)。','解之差给出齐次基本解 \\(e^{2x},e^{-x}\\)，再把特解 \\(xe^x\\) 代入。','新增资料 · 第4章练习');
+sourceQ('pack-ode-06','ode','全微分方程',4,'求 \\((2x+y-4)dx+(x+y-1)dy=0\\) 的通解。','\\(x^2-4x+xy+y^2/2-y=C\\)。','直接凑成 \\(d(x^2-4x)+d(xy)+d(y^2/2-y)=0\\)。','新增资料 · 第4章练习');
+sourceQ('pack-ode-07','ode','最小旋转体',5,'求 \\((x-2y)dx+xdy=0\\) 的一个解曲线，使其与 \\(x=1,x=2\\) 及 \\(x\\) 轴围成的图形绕 \\(x\\) 轴旋转体积最小。','解族 \\(y=x+Cx^2\\)，最优 \\(C=-75/124\\)。','体积 \\(V=\\pi\\int_1^2(x+Cx^2)^2dx\\) 是关于 \\(C\\) 的二次函数，求驻点。','新增资料 · 第4章练习');
+sourceQ('pack-ode-08','ode','Bernoulli 方程',4,'求 \\(y^{\\prime}+y/x=y^2\\ln x\\) 的通解。','\\(xy[C-(\\ln x)^2/2]=1\\)，并有零解。','令 \\(u=y^{-1}\\) 化为线性方程，积分后回代。','新增资料 · 第4章练习');
+sourceQ('pack-ode-09','ode','三角变换线性化',5,'求 \\(y^{\\prime}+x\\sin2y=xe^{-x^2}\\cos^2y\\) 的通解；若 \\(y(0)=\\pi/4\\)，求 \\(\\int_0^1x\\tan ydx\\)。','\\(y=\\arctan[(C+x^2/2)e^{-x^2}]\\)；所求积分为 \\(3/4-1/e\\)。','令 \\(u=\\tan y\\) 得 \\(u^{\\prime}+2xu=xe^{-x^2}\\)，初值给 \\(C=1\\)。','新增资料 · 第4章练习');
+sourceQ('pack-ode-10','ode','Euler 方程初值问题',5,'求 \\(x^3y^{\\prime\\prime}-x^2y^{\\prime}+xy=x^2+1\\;(x>0)\\)，\\(y(1)=1/4,y^{\\prime}(1)=0\\) 的解。','\\(y=x\\ln x/4+x(\\ln x)^2/2+1/(4x)\\)。','除以 \\(x\\) 后令 \\(x=e^t\\) 化为常系数方程，再由初值确定常数。','新增资料 · 第4章练习');
+
+/* 新增资料包原题：第7章多元积分换元、正交变换、含参量积分。 */
+sourceQ('pack-mi-change-01','mi','广义极坐标',4,'计算 \\(\\iint_D|xy|dxdy\\)，其中 \\(D:x^2/a^2+y^2/b^2\\le1\\)。','\\(a^2b^2/2\\)。','利用四象限对称，令 \\(x=ar\\cos\\theta,y=br\\sin\\theta\\)，Jacobian 为 \\(abr\\)。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-02','mi','小参数二重积分',5,'设 \\(D_r:x^2+y^2\\le r^2\\)。求 \\(\\lim_{r\\to0^+}r^{-4}\\iint_{D_r}(e^{x^2+y^2}-1)dxdy\\)。','\\(\\pi/2\\)。','极坐标后为 \\(2\\pi r^{-4}\\int_0^r(e^{\\rho^2}-1)\\rho d\\rho\\)，用等价无穷小。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-03','mi','极坐标面积',5,'求闭曲线 \\((x/a+y/b)^3=xy\\;(a,b>0)\\) 所围区域面积。','\\((ab)^3/60\\)。','令 \\(x=ar\\cos\\theta,y=br\\sin\\theta\\)，求径向上界后积分 \\(\\frac12\\int r^2(\\theta)d\\theta\\)。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-04','mi','环形区域对称积分',5,'计算 \\(\\iint_D(5y^3+x^2+y^2-2x+y+1)dxdy\\)，\\(D:1\\le(x-1)^2+y^2\\le4\\setminus\\{x^2+y^2\\le1\\}\\)。','\\(5\\pi/6+7\\sqrt3/8\\)。','关于 \\(x\\) 轴对称消去奇次 \\(y\\) 项，移心极坐标后按角度分段。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-05','mi','柱坐标质量',5,'曲线 \\(x^2-z^2=1,y=0,-1\\le z\\le1\\) 绕 \\(z\\) 轴成曲面，并与两端平面围成立体。密度为到 \\(z\\) 轴距离的平方，求质量。','\\(28\\pi/15\\)。','柱坐标中半径上界为 \\(\\sqrt{z^2+1}\\)，质量为 \\(\\int r^2\,dV\\)。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-06','mi','空心立体积分',5,'计算 \\(I=\\iiint_\\Omega(x^2+y^2)dV\\)，其中 \\(\\Omega:x^2+y^2+(z-2)^2\\ge4,x^2+y^2+(z-1)^2\\le9,z\\ge0\\)。','\\(256\\pi/3\\)。','柱坐标按 \\(z\\) 分层，外球截面减去内球截面。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-07','mi','变区域含参积分',5,'区域 \\(\\Omega_t\\) 由 \\(z=x^2+y^2\\) 与 \\(x^2+y^2+z^2=t^2\\) 围成。设 \\(F(t)=\\iiint_{\\Omega_t}f(x^2+y^2+z^2)dV\\)，求 \\(F^{\\prime}(t)\\)。','\\(F^{\\prime}(t)=\\pi t f(t^2)[2t+1-\\sqrt{1+4t^2}]\\)。','柱坐标写出随 \\(t\\) 移动的交线，再用 Leibniz 公式求导。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-08','mi','球坐标积分',4,'区域由 \\(z^2=x^2+y^2\\) 与 \\(z=\\sqrt{4-x^2-y^2}\\) 围成，计算 \\(\\iiint_Vz\,dV\\)。','\\(2\\pi\\)。','球坐标中 \\(0\\le\\varphi\\le\\pi/4,0\\le\\rho\\le2\\)，直接积分。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-09','mi','第一卦限球坐标',5,'计算 \\(\\iiint_\\Omega xyz/(x^2+y^2)dV\\)，\\(\\Omega\\) 为 \\((x^2+y^2+z^2)^2=2axy\\) 围成区域的第一卦限部分。','\\(a^2/72\\)。','球坐标边界为 \\(\\rho^2=2a\\sin^2\\varphi\\cos\\theta\\sin\\theta\\)，依次积分。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-10','mi','旋转曲面体积',5,'将 \\(xOz\\) 平面曲线 \\((x^2+z^2)^2=4(x^2-z^2)\\) 绕 \\(Oz\\) 轴旋转，求所得封闭体体积。','\\(\\sqrt2\\pi^2\\)。','球坐标中边界为 \\(\\rho=2\\sqrt{-\\cos2\\varphi}\\)，\\(\\pi/4\\le\\varphi\\le3\\pi/4\\)。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-11','mi','一般三重换元',5,'计算 \\(\\iiint_Vx^2dV\\)，其中 \\(V\\) 由 \\(z=y^2,z=4y^2,z=x,z=3x,z=3\\) 围成。','\\(6\\sqrt3-2\\)。','令 \\(u=z/y^2,v=z/x,w=z\\)，区域化为长方体并计算 Jacobian。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-12','mi','平行六面体体积',4,'六个平面 \\(a_{i1}x+a_{i2}y+a_{i3}z=\\pm h_i\\;(i=1,2,3)\\) 围成立体，且 \\(\\det(a_{ij})\\ne0\\)。求体积。','\\(8h_1h_2h_3/|\\det(a_{ij})|\\)。','把三条线性式作为新坐标，目标域为长方体，Jacobian 为系数行列式倒数。','新增资料 · 第7章换元法');
+sourceQ('pack-mi-change-13','mi','Jacobian 面积比',5,'用 \\(u=y^2/x,v=\\sqrt{xy}\\) 把矩形 \\(a<x<a+h,b<y<b+h\\) 变为 \\(S^{\\prime}\\)。求 \\(A_{S^{\\prime}}/A_S\\) 及 \\(h\\to0\\) 极限。','比值为 \\(\\frac6{5h^2}(a^{-1/2}-(a+h)^{-1/2})[(b+h)^{5/2}-b^{5/2}]\\)；极限 \\(\\frac32(b/a)^{3/2}\\)。','积分 Jacobian \\(|\\partial(u,v)/\\partial(x,y)|=\\frac32(y/x)^{3/2}\\)，再令 \\(h\\to0\\)。','新增资料 · 第7章换元法');
+
+sourceQ('pack-mi-ortho-01','mi','斜轴旋转体',5,'区域由 \\(y=x,y=1/x,x+y=5/2\\) 围成，绕 \\(y=x\\) 旋转，求体积。','\\(13\\sqrt2\\pi/96\\)。','作 45° 正交变换，使旋转轴成为新坐标轴，再用圆盘法。','新增资料 · 第7章正交变换');
+sourceQ('pack-mi-ortho-02','mi','斜轴旋转体',5,'曲线 \\(y=x^2\\) 与直线 \\(y=x\\) 所围图形绕 \\(y=x\\) 旋转，求体积。','\\(\\sqrt2\\pi/60\\)。','45° 正交变换后，按到新轴距离平方积分。','新增资料 · 第7章正交变换');
+sourceQ('pack-mi-ortho-03','mi','二次型 Gaussian 积分',5,'计算 \\(\\iint_{\\mathbb R^2}e^{-(x^2-2xy+2y^2)}dxdy\\)。','\\(\\pi\\)。','正交对角化二次型；两个特征值之积等于 1，Gaussian 积分乘积为 \\(\\pi/\\sqrt{\\det A}=\\pi\\)。','新增资料 · 第7章正交变换');
+sourceQ('pack-mi-ortho-04','mi','圆盘线性函数积分',5,'证明当 \\(D:x^2+y^2\\le1,a^2+b^2\\ne0\\) 时，\\(\\iint_Df(ax+by+c)dxdy=2\\int_{-1}^1\\sqrt{1-u^2}f(u\\sqrt{a^2+b^2}+c)du\\)。','恒等式成立。','取新轴沿 \\((a,b)\\) 方向作正交变换，再先沿垂直方向积分。','新增资料 · 第7章正交变换');
+sourceQ('pack-mi-ortho-05','mi','球冠体积',5,'半径 2 的球体 \\(x^2+y^2+z^2\\le4\\) 被平面 \\(x+y+z=1\\) 切开，求较小部分体积。','\\(\\pi(16/3-35\\sqrt3/27)\\)。','正交变换令 \\(w=(x+y+z)/\\sqrt3\\)，成为标准球冠积分。','新增资料 · 第7章正交变换');
+sourceQ('pack-mi-ortho-06','mi','绝对值三重积分',5,'计算 \\(\\iiint_{x^2+y^2+z^2\\le1}|x+y+z||x-2y+z|dV\\)。','\\(8\\sqrt2/5\\)。','将两线性式归一化为互相正交的新坐标，再在单位球内积分 \\(|uv|\\)。','新增资料 · 第7章正交变换');
+sourceQ('pack-mi-ortho-07','mi','球内方向函数',5,'设 \\(k=\\sqrt{a^2+b^2+c^2}\\)，证明 \\(\\iiint_{B_1}f((ax+by+cz)/\\sqrt{x^2+y^2+z^2})dV=(2\\pi/3)\\int_{-1}^1f(kt)dt\\)。','恒等式成立。','把新极轴取在 \\((a,b,c)\\) 方向，球坐标中的角变量直接给出右端。','新增资料 · 第7章正交变换');
+sourceQ('pack-mi-ortho-08','mi','椭球球冠',5,'椭球 \\(x^2/2+y^2/3+z^2/4\\le1\\) 被平面 \\(x+y+z=1\\) 切开，求较小部分体积。','\\(56\\sqrt6\\pi/81\\)。','先尺度变换为单位球，再正交旋转把切平面化为水平面。','新增资料 · 第7章正交变换');
+sourceQ('pack-mi-ortho-09','mi','椭球绝对值积分',5,'计算 \\(\\iiint_V|x+y+z||2x+2y-z|dV\\)，\\(V:x^2+y^2+z^2/4\\le1\\)。','\\(32\\sqrt2/5\\)。','先把椭球缩放成球，再正交化两线性式，化为单位球上的 \\(|uv|\\) 积分。','新增资料 · 第7章正交变换');
+sourceQ('pack-mi-ortho-10','mi','球面积分降维',5,'设 \\(\\Sigma:x^2+y^2+z^2=1\\)。证明 \\(\\iint_\\Sigma f(ax+by+cz)dS=2\\pi\\int_{-1}^1f(\\sqrt{a^2+b^2+c^2}u)du\\)。','恒等式成立。','把新坐标轴取在线性函数系数方向，再用球面纬圈参数化。','新增资料 · 第7章正交变换');
+sourceQ('pack-mi-ortho-11','mi','截面曲面积分',5,'平面 \\(x+y+z=t\\) 截单位球所得圆盘为 \\(S(t)\\)，\\(F=1-x^2-y^2-z^2\\)。证明 \\(|t|\\le\\sqrt3\\) 时 \\(\\iint_{S(t)}F\,dS=\\pi(3-t^2)^2/18\\)。','结论成立。','正交变换令新轴沿 \\((1,1,1)\\)，截面化为半径 \\(\\sqrt{1-t^2/3}\\) 的圆盘。','新增资料 · 第7章正交变换');
+
+sourceQ('pack-mi-param-01','mi','Leibniz 求导',4,'设 \\(F(x)=\\int_{\\sin x}^{\\cos x}e^{x^2+xt}dt\\)，求 \\(F^{\\prime}(0)\\)。','\\(-1/2\\)。','上下限项加被积函数对 \\(x\\) 的偏导积分，代 \\(x=0\\)。','新增资料 · 第7章含参量积分');
+sourceQ('pack-mi-param-02','mi','双重含参极限',5,'求 \\(\\lim_{x\\to0}[\\int_0^{x/2}dt\\int_{x/2}^te^{-(t-u)^2}du]/[1-e^{-x^2/4}]\\)。','\\(-1/2\\)。','把内积分记为 \\(F(x,t)\\)，对外积分连续使用 Leibniz 公式或 L’Hospital。','新增资料 · 第7章含参量积分');
+sourceQ('pack-mi-param-03','mi','参数积分',5,'设 \\(F(\\alpha)=\\int_0^1\\ln(1+\\alpha x)/(1+x^2)dx\\)。(1) 求 \\(F^{\\prime}(\\alpha)\\)；(2) 求 \\(F(1)\\)。','\\(F^{\\prime}(\\alpha)=[-\\ln(1+\\alpha)+\\frac12\\ln2+\\frac{\\alpha\\pi}{4}]/(1+\\alpha^2)\\)；\\(F(1)=\\pi\\ln2/8\\)。','积分号下求导后对 \\(x/[(1+\\alpha x)(1+x^2)]\\) 作部分分式。','新增资料 · 第7章含参量积分');
+sourceQ('pack-mi-param-04','mi','参数积分恒等式',5,'设 \\(F(y)=\\int_0^1\\frac{\\arctan(y/\\sqrt{2+x^2})}{(1+x^2)\\sqrt{2+x^2}}dx\\)。求 \\(F^{\\prime}(y)\\)，并计算 \\(\\int_0^1\\frac{\\arctan\\sqrt{2+x^2}}{(1+x^2)\\sqrt{2+x^2}}dx\\)。','\\(F^{\\prime}(y)=\\frac1{1+y^2}[\\pi/4-\\frac1{\\sqrt{2+y^2}}\\arctan(1/\\sqrt{2+y^2})]\\)；积分为 \\(5\\pi^2/96\\)。','先在积分号下求导；第二问用 \\(\\arctan x+\\arctan(1/x)=\\pi/2\\) 配对。','新增资料 · 第7章含参量积分');
+sourceQ('pack-mi-param-05','mi','球内小参数极限',5,'设 \\(f\\in C^1,f(0)=0\\)，求 \\(\\lim_{t\\to0^+}(\\pi t^4)^{-1}\\iiint_{x^2+y^2+z^2\\le t^2}f(\\sqrt{x^2+y^2+z^2})dV\\)。','\\(f^{\\prime}(0)\\)。','球坐标化为 \\(4t^{-4}\\int_0^tf(r)r^2dr\\)，再用 L’Hospital。','新增资料 · 第7章含参量积分');
+sourceQ('pack-mi-param-06','mi','圆盘平均极限',5,'若 \\(f\\) 在原点附近有二阶连续偏导，求 \\(\\lim_{\\rho\\to0^+}\\rho^{-4}\\iint_{x^2+y^2\\le\\rho^2}[f(x,y)-f(0,0)]dxdy\\)。','\\(\\pi[f_{xx}(0,0)+f_{yy}(0,0)]/8\\)。','二阶 Taylor 展开；一次项和混合项由圆盘对称性积分为零。','新增资料 · 第7章含参量积分');
+sourceQ('pack-mi-param-07','mi','变区域嵌套积分',5,'设 \\(f(0,0)=0,df|_{(0,0)}=3dx+2dy\\)。求讲义中的嵌套变限积分极限 \\(\\lim_{x\\to0^+}\\frac{\\int_0^{x^2}dt\\int_x^{\\sqrt t}f(t,u)du}{x\\sqrt{1-\\sqrt{1-x^4}}}\\)。','\\(-2\\)。','把内积分记为参数函数，Leibniz 求导并用 \\(f_x(0,0)=3,f_y(0,0)=2\\) 及分母等价式。','新增资料 · 第7章含参量积分');
+sourceQ('pack-mi-param-08','mi','Gauss 与参数极限',5,'令 \\(P=Q=R=f((x^2+y^2)z)\\)，\\(\\Sigma_t\\) 为圆柱 \\(x^2+y^2\\le t^2,0\\le z\\le1\\) 的外向表面，\\(I_t=\\iint_{\\Sigma_t}Pdy dz+Qdz dx+Rdxdy\\)。求 \\(\\lim_{t\\to0^+}I_t/t^4\\)。','\\(\\pi f^{\\prime}(0)/2\\)。','用 Gauss 公式化为柱体内散度积分，再作柱坐标和 L’Hospital。','新增资料 · 第7章含参量积分');
+sourceQ('pack-mi-param-09','mi','广义平均极限',5,'区域 \\(D\\) 面积为 \\(A>0\\)，\\(f>0\\) 连续。设 \\(J_n=[A^{-1}\\iint_Df^{1/n}d\\sigma]^n\\)，求 \\(\\lim_{n\\to\\infty}J_n\\)。','\\(\\exp[A^{-1}\\iint_D\\ln f\,d\\sigma]\\)。','令 \\(t=1/n\\)，对 \\(F(t)=A^{-1}\\iint_Df^t\\) 的对数商用 L’Hospital。','新增资料 · 第7章含参量积分');
+
+/* 固定模板 C：历年题卷。新增年份时复制对象；题目字段仍使用 q(...)。 */
+const papers=[
+{year:'2024',note:'回忆版整理 · 建议 120 分钟',qs:[
+q('p2401','paper','极限综合',5,'求 \\(\\lim_{n\\to\\infty}n^2(e^{1/n}-1-1/n)\\)。','\\(1/2\\)。','令 \\(x=1/n\\)，使用指数函数二阶 Taylor 展开。'),
+q('p2402','paper','多元最值',5,'求 \\(x^2+y^2+z^2\\) 在平面 \\(x+2y+2z=6\\) 上的最小值。','4。','原点到平面距离为 2，目标值是距离平方。'),
+q('p2403','paper','特征值',5,'实对称矩阵 \\(A\\) 的特征值为 1,1,3，且 \\((1,1,1)^T\\) 是特征值 3 的特征向量，求 \\(A\\)。','\\(A=I+\\frac23ee^T,e=(1,1,1)^T\\)。','在单位化 \\(e\\) 的方向补 2，在正交补上保持单位矩阵。')]},
+{year:'2023',note:'回忆版整理 · 强化证明',qs:[
+q('p2301','paper','导数不等式',5,'\\(f(0)=0\\) 且 \\(|f^{\\prime}|\\le|f|\\)，证明 \\(f\\equiv0\\)。','恒等于 0。','由积分形式与 Grönwall 不等式；正负半轴分别处理。'),
+q('p2302','paper','曲线积分',5,'\\(L\\) 绕原点正向一周，求 \\(\\oint_L\\frac{-y dx+xdy}{x^2+y^2}\\)。','\\(2\\pi\\)。','区域有洞，挖去小圆后用 Green；结果等于绕数乘 \\(2\\pi\\)。'),
+q('p2303','paper','幂等矩阵',4,'\\(A^2=A\\)，证明 \\(r(A)+r(I-A)=n\\)。','成立。','空间分解为 \\(\\operatorname{Im}A\\) 与 \\(\\ker A\\) 直和。')]},
+{year:'2022',note:'回忆版整理 · 综合计算',qs:[
+q('p2201','paper','零点存在',4,'\\(f\\in C[0,1]\\) 且 \\(\\int_0^1f=0\\)，证明 \\(f\\) 在区间内有零点。','存在。','若恒正或恒负则积分严格同号；否则用介值定理。'),
+q('p2202','paper','三重积分',4,'求 \\(\\iiint_{x^2+y^2+z^2\\le1}(x^2+y^2+z^2)dV\\)。','\\(4\\pi/5\\)。','球坐标化为 \\(4\\pi\\int_0^1r^4dr\\)。'),
+q('p2203','paper','行列式',5,'\\(n\\) 阶矩阵对角元为 \\(a\\)、非对角元为 \\(b\\)，求行列式。','\\((a-b)^{n-1}[a+(n-1)b]\\)。','写成 \\((a-b)I+bJ\\)，利用 \\(J\\) 的特征值。')]}
+];
+papers.forEach(p=>p.qs.forEach(x=>x.source=p.year+' 年真题整理'));
+const paperQuestions=papers.flatMap(x=>x.qs),all=[...questions,...paperQuestions],map=new Map(all.map(x=>[x.id,x]));
+const read=k=>{try{const v=JSON.parse(localStorage.getItem(k)||'[]');return Array.isArray(v)?v:[]}catch(e){return[]}};
+const state={done:new Set(read('cmc_done_v1').filter(x=>map.has(x))),fav:new Set(read('cmc_fav_v1').filter(x=>map.has(x))),chapter:chapters[0].id,queue:[],index:-1};
+const $=s=>document.querySelector(s),$$=s=>Array.from(document.querySelectorAll(s)),stars=n=>'★'.repeat(n)+'☆'.repeat(5-n);
+function math(el){if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise(el?[el]:undefined).catch(()=>{})}
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>e.classList.remove('show'),1500)}
+function stats(){const n=all.length;$('#progressText').textContent=state.done.size+' / '+n;$('#progressBar').style.width=(state.done.size/n*100)+'%';$('#favBadge').textContent=state.fav.size;$('#favSummary').textContent='共 '+state.fav.size+' 题'}
+function save(){try{localStorage.setItem('cmc_done_v1',JSON.stringify([...state.done]));localStorage.setItem('cmc_fav_v1',JSON.stringify([...state.fav]))}catch(e){toast('浏览器存储不可用')}stats()}
+const list=a=>'<ul>'+a.map(x=>'<li>'+x+'</li>').join('')+'</ul>';
+function card(x){const d=state.done.has(x.id),f=state.fav.has(x.id);return '<article class="question '+(d?'completed':'')+'" data-id="'+x.id+'"><div class="qmeta"><div class="qtags"><span class="tag">'+x.t+' · '+stars(x.l)+'</span><span class="source">'+x.source+'</span></div><span>'+(d?'已完成':'待完成')+'</span></div><div class="qbody">'+x.b+'</div><div class="actions"><button class="btn primary ans-btn" aria-expanded="false">查看答案</button><button class="btn done-btn '+(d?'on-done':'')+'">'+(d?'✓ 已完成':'✓ 标记已完成')+'</button><button class="btn fav-btn '+(f?'on-fav':'')+'">'+(f?'★ 已收藏':'☆ 收藏本题')+'</button></div><div class="answer"><p><strong>答案：</strong>'+x.a+'</p><p><strong>解析：</strong>'+x.s+'</p></div></article>'}
+function renderChapter(){const c=chapters.find(x=>x.id===state.chapter);$('#tabs').innerHTML=chapters.map((x,i)=>'<button class="'+(x.id===c.id?'active':'')+'" data-ch="'+x.id+'">'+(i+1)+' '+x.short+'</button>').join('');$('#theory').innerHTML='<div class="head"><h2>'+c.title+'</h2><p>'+c.intro+'</p></div><div class="topics">'+c.topics.map(x=>'<span class="chip">'+x+'</span>').join('')+'</div><div class="theory"><article><h3>01　定义与对象</h3>'+list(c.parts[0])+'</article><article><h3>02　定理与适用前提</h3>'+list(c.parts[1])+'</article><article><h3>03　全套核心公式</h3>'+list(c.parts[2])+'</article><article><h3>04　竞赛二级结论</h3>'+list(c.parts[3])+'</article><article><h3>05　易错坑点</h3>'+list(c.parts[4])+'</article></div>';const qs=questions.filter(x=>x.ch===c.id);$('#qCount').textContent=qs.length+' 道 · 平均难度 '+stars(Math.round(qs.reduce((a,b)=>a+b.l,0)/qs.length));$('#specialList').innerHTML=qs.map(card).join('');math($('#special'))}
+function renderPapers(){$('#paperList').innerHTML=papers.map((p,i)=>'<details class="year" '+(i?'':'open')+'><summary><span>'+p.year+' 年竞赛真题整理</span><small>'+p.note+' · '+p.qs.length+' 题</small></summary><div class="paper-body"><div class="qlist">'+p.qs.map(card).join('')+'</div></div></details>').join('');math($('#papers'))}
+function renderFav(){const a=[...state.fav].map(x=>map.get(x)).filter(Boolean);$('#favSummary').textContent='共 '+a.length+' 题';$('#favList').innerHTML=a.length?a.map(card).join(''):'<div class="empty"><strong>收藏夹还是空的</strong>在任意题目下点击“收藏本题”。</div>';math($('#favorites'))}
+function pool(v){if(v==='special')return[...questions];if(v==='paper')return[...paperQuestions];if(v.startsWith('ch:'))return questions.filter(x=>x.ch===v.slice(3));return[...all]}
+function shuffle(a){a=[...a];for(let i=a.length-1;i;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function renderRandom(){if(!state.queue.length||state.index<0)return;if(state.index>=state.queue.length){$('#stage').innerHTML='<div class="empty"><strong>本轮已全部完成</strong>'+state.queue.length+' 道题没有重复；重新开始即可再次洗牌。</div>';return}const x=state.queue[state.index];$('#stage').innerHTML='<div class="random-bar"><span>本轮进度 <strong>'+(state.index+1)+' / '+state.queue.length+'</strong> · 剩余 '+(state.queue.length-state.index-1)+' 题</span><button class="btn primary" id="next">下一题 →</button></div>'+card(x);math($('#stage'))}
+function refresh(id){$$('.question[data-id="'+id+'"]').forEach(old=>{const open=old.querySelector('.answer')?.classList.contains('open'),box=document.createElement('div');box.innerHTML=card(map.get(id));const neo=box.firstElementChild;if(open){neo.querySelector('.answer').classList.add('open');neo.querySelector('.ans-btn').textContent='收起解析';neo.querySelector('.ans-btn').setAttribute('aria-expanded','true')}old.replaceWith(neo)});math()}
+function showView(id){$$('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.view===id));$$('.view').forEach(x=>x.classList.toggle('active',x.id===id));if(id==='favorites')renderFav();window.scrollTo({top:0,behavior:'smooth'});math($('#'+id))}
+$('#scope').innerHTML='<option value="all">全部题库（专项 + 真题）</option><option value="special">全部专项题</option><option value="paper">仅历年真题</option>'+chapters.map(x=>'<option value="ch:'+x.id+'">'+x.title+'</option>').join('');
+document.addEventListener('click',e=>{const n=e.target.closest('.nav button');if(n){showView(n.dataset.view);return}const t=e.target.closest('[data-ch]');if(t){state.chapter=t.dataset.ch;renderChapter();return}if(e.target.closest('#startRandom')){state.queue=shuffle(pool($('#scope').value));state.index=0;renderRandom();toast('已生成 '+state.queue.length+' 道无重复题目');return}if(e.target.closest('#next')){state.index++;renderRandom();return}const c=e.target.closest('.question');if(!c)return;const id=c.dataset.id;if(e.target.closest('.ans-btn')){const a=c.querySelector('.answer'),b=e.target.closest('.ans-btn');a.classList.toggle('open');const o=a.classList.contains('open');b.textContent=o?'收起解析':'查看答案';b.setAttribute('aria-expanded',String(o))}if(e.target.closest('.done-btn')){state.done.has(id)?state.done.delete(id):state.done.add(id);save();refresh(id);toast(state.done.has(id)?'已标记完成':'已取消完成')}if(e.target.closest('.fav-btn')){state.fav.has(id)?state.fav.delete(id):state.fav.add(id);save();refresh(id);if($('#favorites').classList.contains('active'))renderFav();toast(state.fav.has(id)?'已加入收藏':'已移出收藏')}});
+/* WebMCP：在支持的浏览器中，AI 可通过和界面相同的状态动作读取进度、更新题目。 */
+function registerWebMCP(){const m=document.modelContext;if(!m||!m.registerTool)return;const reg=x=>{try{Promise.resolve(m.registerTool(x)).catch(()=>{})}catch(e){}};reg({name:'read_practice_progress',title:'读取刷题进度',description:'读取总题数、已完成数和收藏数。',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:false},execute:()=>({total:all.length,completed:state.done.size,favorites:state.fav.size})});reg({name:'set_question_status',title:'设置题目状态',description:'按题目ID设置完成或收藏状态，并同步界面。',inputSchema:{type:'object',properties:{questionId:{type:'string'},completed:{type:'boolean'},favorite:{type:'boolean'}},required:['questionId'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute:v=>{if(!v||!map.has(v.questionId))throw Error('未知题目ID');if(typeof v.completed==='boolean')v.completed?state.done.add(v.questionId):state.done.delete(v.questionId);if(typeof v.favorite==='boolean')v.favorite?state.fav.add(v.questionId):state.fav.delete(v.questionId);save();refresh(v.questionId);return{questionId:v.questionId,completed:state.done.has(v.questionId),favorite:state.fav.has(v.questionId)}}})}
+renderChapter();renderPapers();renderFav();stats();registerWebMCP();
+</script>
+</body></html>
