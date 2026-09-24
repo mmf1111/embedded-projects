@@ -1,17 +1,21 @@
-# 嵌入式开发项目集
+# 电子信息工程项目集
 
-电子信息工程专业个人项目集合，涵盖嵌入式单片机、硬件电路与 Android 应用开发。
+中国计量大学电子信息工程项目作品集。收录可以查看的源码、仿真工程、PCB 文件及项目说明；各项目的验证范围在对应 README 中标注。
 
-## 项目
-
-| 项目 | 说明 | 技术栈 |
+| 项目 | 主要内容 | 验证方式 |
 |---|---|---|
-| [smart-car](smart-car/) | 物联网智能避障小车 | Arduino、C++、立创 EDA、PCB |
-| [mcu-auto-data-acquisition](mcu-auto-data-acquisition/) | 单片机自动数据采集系统 | STC15、C51、I²C、1-Wire、Keil |
-| [analog-circuit-design](analog-circuit-design/) | 电子线路课程设计（汽车尾灯） | NE555、74LS、Multisim、Proteus、立创 EDA |
-| [android-ble-door](android-ble-door/) | Android BLE 无感开门 | Kotlin、Android BLE、前台服务 |
-| [math-competition-trainer](math-competition-trainer/) | 竞赛数学训练网页 | HTML/CSS/JavaScript、MathJax |
+| [智能小车](smart-car/) | Arduino 控制、黑线循迹、红外避障、蓝牙串口、双层 PCB | 实车制作与联调 |
+| [STC15 数据采集](mcu-auto-data-acquisition/) | PCF8591 电压采集、DS18B20 温度读取、按键与数码管显示 | Keil 工程及 HEX |
+| [FPGA/Verilog 课程实验](fpga-verilog-labs/) | 数据选择器、24 小时时钟、序列检测、ADC0809 控制、交通灯 | **功能仿真，未上板** |
+| [汽车尾灯电路](analog-circuit-design/) | NE555、74LS 逻辑、仿真、PCB 与实物 | 仿真及实物调试 |
+| [Android BLE 无感开门](android-ble-door/) | BLE 扫描、RSSI 判断、GATT 写入、前台服务 | Android 工程 |
+| [竞赛数学训练网页](math-competition-trainer/) | 原生 HTML/CSS/JavaScript、MathJax、随机练习和进度保存 | 浏览器运行 |
 
-## 关于我
+## 阅读顺序
 
-嵌入式开发方向，面向 MCU / 单片机岗位，具备从原理图、PCB 到固件与样机联调的完整能力。
+- 投嵌入式软件：先看 [智能小车](smart-car/) 和 [STC15 数据采集](mcu-auto-data-acquisition/)。
+- 投硬件或电子测试：先看 [汽车尾灯电路](analog-circuit-design/) 和智能小车的 PCB 工程。
+- 投 FPGA：先看 [Verilog 课程实验](fpga-verilog-labs/)。
+- 投物联网应用：先看 [Android BLE 无感开门](android-ble-door/) 与 STC15 数据采集。
+
+除已保留的 STC15 示例 HEX 和项目接线说明外，软件安装包、编译缓存、通用课程任务书与参考报告未收录。正在进行的挑战杯项目未收录于此仓库。

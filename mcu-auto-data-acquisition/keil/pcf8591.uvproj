@@ -324,7 +324,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\User;..\Source</IncludePath>
+              <IncludePath>..\src</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -379,7 +379,7 @@
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\User\main.c</FilePath>
+              <FilePath>..\src\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -389,82 +389,82 @@
             <File>
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\delay.c</FilePath>
+              <FilePath>..\src\delay.c</FilePath>
             </File>
             <File>
               <FileName>led.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\led.c</FilePath>
+              <FilePath>..\src\led.c</FilePath>
             </File>
             <File>
               <FileName>i2c_hw.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\i2c_hw.c</FilePath>
+              <FilePath>..\src\i2c_hw.c</FilePath>
             </File>
             <File>
               <FileName>keyboard.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\keyboard.c</FilePath>
+              <FilePath>..\src\keyboard.c</FilePath>
             </File>
             <File>
               <FileName>pcf8591.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\pcf8591.c</FilePath>
+              <FilePath>..\src\pcf8591.c</FilePath>
             </File>
             <File>
               <FileName>timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\timer.c</FilePath>
+              <FilePath>..\src\timer.c</FilePath>
             </File>
             <File>
               <FileName>ledseg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\ledseg.c</FilePath>
+              <FilePath>..\src\ledseg.c</FilePath>
             </File>
             <File>
               <FileName>delay.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source\delay.h</FilePath>
+              <FilePath>..\src\delay.h</FilePath>
             </File>
             <File>
               <FileName>ds18b20.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\ds18b20.c</FilePath>
+              <FilePath>..\src\ds18b20.c</FilePath>
             </File>
             <File>
               <FileName>ds18b20.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source\ds18b20.h</FilePath>
+              <FilePath>..\src\ds18b20.h</FilePath>
             </File>
             <File>
               <FileName>i2c_hw.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source\i2c_hw.h</FilePath>
+              <FilePath>..\src\i2c_hw.h</FilePath>
             </File>
             <File>
               <FileName>keyboard.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source\keyboard.h</FilePath>
+              <FilePath>..\src\keyboard.h</FilePath>
             </File>
             <File>
               <FileName>led.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source\led.h</FilePath>
+              <FilePath>..\src\led.h</FilePath>
             </File>
             <File>
               <FileName>ledseg.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source\ledseg.h</FilePath>
+              <FilePath>..\src\ledseg.h</FilePath>
             </File>
             <File>
               <FileName>pcf8591.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source\pcf8591.h</FilePath>
+              <FilePath>..\src\pcf8591.h</FilePath>
             </File>
             <File>
               <FileName>timer.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source\timer.h</FilePath>
+              <FilePath>..\src\timer.h</FilePath>
             </File>
           </Files>
         </Group>

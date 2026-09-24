@@ -1,2 +1,15 @@
 .DS_Store
 *.log
+Thumbs.db
+*.uvopt
+*.uvgui*
+*.bak
+*.wlf
+*.qdb
+*.cdb
+*.rpt
+**/db/
+**/incremental_db/
+**/output_files/
+**/build/
+local.properties

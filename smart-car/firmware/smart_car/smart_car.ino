@@ -422,5 +422,42 @@ void turnRight() {
 void slightLeft() {
   static unsigned long lastTime = 0;
   static bool leftMotorState = false;
-  
-  unsigned 
+  unsigned long currentTime = millis();
+  if (currentTime - lastTime > 300) {
+    leftMotorState = !leftMotorState;
+    lastTime = currentTime;
+  }
+
+  digitalWrite(rightMotorPin1, HIGH);
+  digitalWrite(rightMotorPin2, LOW);
+  digitalWrite(leftMotorPin1, leftMotorState ? HIGH : LOW);
+  digitalWrite(leftMotorPin2, LOW);
+}
+
+void slightRight() {
+  static unsigned long lastTime = 0;
+  static bool rightMotorState = false;
+  unsigned long currentTime = millis();
+  if (currentTime - lastTime > 300) {
+    rightMotorState = !rightMotorState;
+    lastTime = currentTime;
+  }
+
+  digitalWrite(leftMotorPin1, HIGH);
+  digitalWrite(leftMotorPin2, LOW);
+  digitalWrite(rightMotorPin1, rightMotorState ? HIGH : LOW);
+  digitalWrite(rightMotorPin2, LOW);
+}
+
+void stopMotors() {
+  digitalWrite(leftMotorPin1, LOW);
+  digitalWrite(leftMotorPin2, LOW);
+  digitalWrite(rightMotorPin1, LOW);
+  digitalWrite(rightMotorPin2, LOW);
+}
+
+// 蓝牙指令使用的短名称，与自动模式共用同一组电机控制函数。
+void forward() { moveForward(); }
+void backward() { moveBackward(); }
+void left() { turnLeft(); }
+void right() { turnRight(); }
